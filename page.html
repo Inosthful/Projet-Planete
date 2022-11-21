@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/main2.js" defer></script>
+  <script src="/js/all.min.js"></script>
+  <title>Accueil</title>
+</head>
+
+<body class="d-flex flex-column justify-content-between">
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid container">
+      <a class="navbar-brand couleurPrenom" href="">Enzo Martinez</a>
+      <li class="nav-item dropdown" style="list-style: none;">
+        <input id="boutonPlus" type="checkbox" hidden>
+        <label for="boutonPlus" id="share" class="share plus">+
+        </label> 
+        <!-- <div id="share" class="share"> -->
+        <!-- </div> -->
+        <div id="mercure" class="un">
+          <img onclick="redirect1()" class="mercure" src="./Images/Mercure.png" alt="image Mercure">
+        </div>
+        <div class="deux">
+          <img onclick="redirect2()" class="venus" src="./Images/Venus.png" alt="image Venus">
+        </div>
+        <div class="trois">
+          <img onclick="redirect3()" class="mars" src="./Images/planete Mars.png" alt="image Mars">
+        </div>
+        <div class="quatre">
+          <img onclick="redirect4()" class="terre" src="./Images/Terre.png" alt="image Terre">
+        </div>
+        <div class="cinq">
+          <img onclick="redirect5()" class="jupiter" src="./Images/Jupiter.png" alt="image Jupiter">
+        </div>
+        <div class="six">
+          <img onclick="redirect6()" class="saturne" src="./Images/Saturne.png" alt="image Saturne">
+        </div>
+        <div class="sept">
+          <img onclick="redirect7()" class="uranus" src="./Images/Uranus ( pas sur du tout ).png" alt="image Uranus">
+        </div>
+        <div class="huit">
+          <img onclick="redirect8()" class="neptune" src="./Images/Neptune.png" alt="image Neptune">
+        </div> 
+        <section class="etoile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
+
+        <!-- <a class="nav-link dropdown-toggle couleurNav" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Planètes -->
+        <!-- </a> -->
+        <!-- <ul class="dropdown-menu couleurDropdown">
+          <li><a class="dropdown-item couleurDropdown" href="#">Mercure</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Venus</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Mars</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Terre</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Jupiter</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Saturne</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Uranus</a></li>
+          <li><a class="dropdown-item couleurDropdown" href="#">Neptune</a></li>
+        </ul> -->
+
+      </li>
+    </div>
+    <!-- CHECK / garder dans un coin de la tete ->>>>>> REACT VOIR / AJAX MURPHY GIVE  -->
+  </nav>
+
+  <section class="d-flex flex-column text_center justify-content-center align-items-center">
+    <div class="texteAccueil">
+      <div id="autoType" class="typeAuto">
+        Bienvenue sur mon portfolio ! <br></div>
+      <div class="typeAuto2">
+        Vous pouvez y entrer en cliquant ci dessous.
+        <!-- Lettre qui apparaissent aléatoirement maybe ca a un flow -->
+      </div>
+    </div>
+
+
+    <div>
+      <a href="/index.html"><button class="boutonStylax"> CLIQUE</button></a>
+    </div>
+  </section>
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////////// -->
+  <footer class="d-flex align-items-center justify-content-center taille">
+    <!-- <div id="bulle-wrapper"></div> -->
+    <div class=" w-50 d-flex justify-content-around">
+      <a href="https://twitter.com/"><button id="btnEnzo" class="btn"><i id="couleurteh"
+            class="fa-brands fa-twitter fa-2x couleurStates"></i></button></a>
+      <a href="https://www.instagram.com/"><button id="btnEnzo2" class="btn"><i id="couleurteh2"
+            class="fa-brands fa-instagram fa-2x couleurStates2"></i></a></button>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
+
+
+
+<!-- https://codepen.io/chouaibblgn45/pen/gxrGOb -->

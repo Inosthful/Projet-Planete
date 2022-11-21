@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <!-- <div class="planete"> -->
+    <img class="w-85 soleil img-fluid animationPlanete @include media-breakpoint-only(md) mx-auto d-block"
+        src="/Images/Soleil ( test 2 ).png.crdownload" alt="image soleil">
+    <img onclick="redirectMercure()" class="w-8 mercure img-fluid mx-auto d-block " src="./Images/Mercure.png"
+        alt="image mercure">
+    <img onclick="redirectVenus()" class="w-15 venus img-fluid mx-auto d-block " src="./Images/Venus.png"
+        alt="image venus">
+    <img onclick="redirectMars()" class="w-9 mars img-fluid rounded mx-auto d-block" src="./Images/planete Mars.png"
+        alt="image mars">
+    <img id="terre" onclick="redirectTerre()" class="w-16 terre img-fluid rounded mx-auto d-block"
+        src="./Images/Terre.png" alt="image terre">
+    <img onclick="redirectJupiter()" class="w-35 jupiter img-fluid rounded mx-auto d-block " src="./Images/Jupiter.png"
+        alt="image jupiter">
+    <img onclick="redirectSaturne()" class="w-42 saturne img-fluid rounded mx-auto d-block " src="./Images/Saturne.png"
+        alt="image saturne">
+    <img onclick="redirectUranus()" class="w-15 uranus img-fluid rounded mx-auto d-block "
+        src="./Images/Uranus ( pas sur du tout ).png" alt="image uranus">
+    <img onclick="redirectNeptune()" class="w-15 neptune img-fluid rounded mx-auto d-block " src="./Images/Neptune.png"
+        alt="image neptune">
+    <img onclick="redirectAccueil()" class="w-10 bouton img-fluid rounded mx-auto d-block" src="./BOUTON/STP.PNG"
+        alt="redirection accueil">
+    <!-- </div> -->
+
+    <!-- GAMEPLAN SUITE : Format mobile a tout bien faire pixel avec le breakpoint, curseur changer   DONE -->
+    <!-- chercher si y'a pas d'autre animation que le "hover" qui irait bien avec le projet,  photo étoile fond transparent qui defile et je met
+le premier background iamge qui defile mais un peu plus lentement ( voir samuel s'il faut ) -->
+    <!-- FINIR LE BOUTON, LE SCREEN ET L INCRUSTER EN HAUT A DROITE EN POSITION RELATIVE I GUESS   DONE -->
+    <!-- faire les redirection des planetes a un truc ( m'en fou de ce que c'est ) DONE DONE, https://stackoverflow.com/questions/29933209/redirect-on-click-of-an-image -->
+    <!-- créer la page d'accueil juste avant le site ( un espece de " bienvenue sur mon portefolio, rentrez en cliquant ici" ou un bail similaire) -->
+    <!-- faire l'icone pour aller a la page d'accueil depuis toute les redirections et le systeme solaire  en cours ( fait que sur le
+        systeme solaire atm-)-->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
