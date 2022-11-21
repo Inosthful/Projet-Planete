@@ -1,63 +1,90 @@
-
 html {
-    /* box-sizing: border-box; */
-    overflow: hidden;
-    cursor: url(/Images/cursor.png), default;
-    /* max-height: 50vh !important; */
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  cursor: url(/Images/cursor.png), default;
+  /* max-height: 50vh !important; */
 }
+
 /* box shadow de l'icone -webkit-box-shadow: 2.5px 2.5px 18px 2.5px #030270; 
 box-shadow: 2.5px 2.5px 18px 2.5px #030270; */
 body {
-    background-image: url(/Images/fond\ espace\ image.jpg);
-    /* background-image: url(/Images/etoiles.png); */
-    /* width: auto; */
-    /* background-image: url(/Images/nebuleuse\ test.png); */
-    /* transform: translateX(15px); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 59%;
-    background-attachment: fixed;
-    max-height: 50vh !important;
+  background-image: url(/Images/fond\ espace\ image.jpg);
+  /* background-image: url(/Images/etoiles.png); */
+  /* width: auto; */
+  /* background-image: url(/Images/nebuleuse\ test.png); */
+  /* transform: translateX(15px); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 59%;
+  background-attachment: fixed;
+  max-height: 50vh !important;
 }
 
-.bouton{
+.bouton {
   /* height: 100%; */
 
   position: relative;
   left: 66.4vw;
-  bottom: 129.5vw;
+  bottom: 128.5vw;
 }
 
-a{
+a {
   /* display: inline-block; */
   position: static;
 }
 
-.bouton:hover{
-/* background-color: rgb(68, 14, 168); */
-transform:scale(125%);
+.bouton:hover {
+
+  animation: animationBouton 1s;
+  transform: scale(125%);
+
+}
+/* .bouton::before{
+  animation: animationBouton2 1s;
+  transform: scale(100%);
+} */
+
+@keyframes animationBouton {
+  from {
+    transform: scale(100%);
+  }
+
+  to {
+    transform: scale(125%);
+  }
 }
 
+/* @keyframes animationBouton2 {
+  from {
+    transform: scale(125%);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+} */
+
+
 .soleil {
-    position: relative;
-    /* right: 30vw;
+  position: relative;
+  /* right: 30vw;
     bottom: -2.5vw;  Soleil plus cartoon */
-    right: 30vw;
-    /* width: 86%; */
-    /* top: 2.5vw; */
+  right: 30vw;
+  /* width: 86%; */
+  /* top: 2.5vw; */
 
 }
 
 .mars {
-    position: relative;
-    /* left: 51%; */
-    bottom: 47vw;
-    left: 23vw;
-    transition: all 1.5s ease-in-out;
+  position: relative;
+  /* left: 51%; */
+  bottom: 47vw;
+  left: 23vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .animationPlanete {
-    animation: constanteRotation 250s normal linear infinite;
+  animation: constanteRotation 250s normal linear infinite;
 }
 
 /* .animationTerre {
@@ -65,90 +92,90 @@ transform:scale(125%);
 } */
 
 .mars:hover {
-    transform: rotate(360deg) scale(1.35);
+  transform: rotate(360deg) scale(1.35);
 
 }
 
 .mercure {
-    position: relative;
-    right: 3vw;
-    bottom: 31vw;
-    transition: all 1.5s ease-in-out ;
+  position: relative;
+  right: 3vw;
+  bottom: 31vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .mercure:hover {
-    transform: rotate(360deg) scale(1.4);
-    
+  transform: rotate(360deg) scale(1.4);
+
 }
 
 .venus {
-    position: relative;
-    bottom: 50vw;
-    left: 5vw;
-    transition: all 1.5s ease-in-out;
+  position: relative;
+  bottom: 50vw;
+  left: 5vw;
+  transition: all 1.5s ease-in-out;
 
 }
 
 .venus:hover {
-    transform: rotate(360deg) scale(1.35);
+  transform: rotate(360deg) scale(1.35);
 }
 
 .terre {
-    position: relative;
-    bottom: 42vw;
-    left: 13vw;
-    transition: all 1.5s ease-in-out;
-    transform: rotate(290deg);
-    
+  position: relative;
+  bottom: 42vw;
+  left: 13vw;
+  transition: all 1.5s ease-in-out;
+  transform: rotate(290deg);
+
 }
 
 .terre:hover {
-    transform: rotate(630deg) scale(1.35);
+  transform: rotate(630deg) scale(1.35);
 }
 
 .jupiter {
-    position: relative;
-    bottom: 50vw;
-    left: 32vw;
-    transition: all 1.5s ease-in-out;
-    margin: 0;
+  position: relative;
+  bottom: 50vw;
+  left: 32vw;
+  transition: all 1.5s ease-in-out;
+  margin: 0;
 }
 
 .jupiter:hover {
-    transform: rotate(360deg) scale(1.3);
+  transform: rotate(360deg) scale(1.3);
 }
 
 .saturne {
-    position: relative;
-    bottom: 93vw;
-    left: 43vw;
-    transition: all 1.5s ease-in-out;
+  position: relative;
+  bottom: 93vw;
+  left: 43vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .saturne:hover {
-    transform: rotate(330deg) scale(1.3);
+  transform: rotate(330deg) scale(1.3);
 }
 
 .uranus {
-    position: relative;
-    bottom: 71vw;
-    left: 52vw;
-    transition: all 1.5s ease-in-out;
+  position: relative;
+  bottom: 71vw;
+  left: 52vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .uranus:hover {
-    transform: rotate(360deg) scale(1.4);
+  transform: rotate(360deg) scale(1.4);
 }
 
 .neptune {
-    position: relative;
-    bottom: 99vw;
-    left: 63vw;
-    transition: all 1.5s ease-in-out;
+  position: relative;
+  bottom: 99vw;
+  left: 63vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .neptune:hover {
-    transform: rotate(360deg) scale(1.35);
+  transform: rotate(360deg) scale(1.35);
 }
 
 
@@ -156,16 +183,17 @@ transform:scale(125%);
 
 
 @keyframes constanteRotation {
-    0% {
-        transform: rotate(0deg)
-    }
+  0% {
+    transform: rotate(0deg)
+  }
 
-    100% {
-        transform: rotate(360deg)
-    }
+  100% {
+    transform: rotate(360deg)
+  }
 
-    ;
+  ;
 }
+
 /* 
 @keyframes constanteRotationTerre {
     0% {
@@ -182,273 +210,205 @@ transform:scale(125%);
 
 /* taille w x2.5 ( 10% -> 25% sur mobile )*/
 
-@media (max-width:650px){
-    .soleil{
-        position: relative;
-        left: 23vw;
-    }
-    .w-85{
-        width:100% !important;
-    }
-    .mercure{
-        position: relative;
-        left: 13vw;
-        top: 3vw;
-        transform: rotate(90deg);
-    }
-    .w-8{
-        width: 20% !important; 
-    }
-    .venus{
-        position: relative;
-        bottom: 1vw;
-        left: 46vw;
-        transform: rotate(90deg);
-    }
-    .w-15{
-        width: 34.5% !important; 
-    }
-    .terre{
-        position: relative;
-        left: 4vw;
-        bottom: 15vw;
-        transform: rotate(0deg);
-    }
-    .w-16{
-        width: 39% !important; 
-    }
-    .mars{
-        position: relative;
-        left: 36vw;
-        top: 20vw;
-        transform: rotate(90deg);
-    }
-    .w-9{
-        width: 23.5% !important; 
-    }
-    .jupiter{
-        position: relative;
-        left: -10vw;
-        bottom: 3vw;
-        transform: rotate(90deg);
-    }
-    .w-35{
-        width: 70% !important; 
-    }
-    .saturne{
-        position: relative;
-        left: 43vw;
-        bottom: 22vw;
-        transform: rotate(60deg);
-    }
-    .w-42{
-        width: 103% !important; 
-    }
-    .uranus{
-        position: relative;
-        left: -5vw;
-        bottom: 22vw;
-        transform: rotate(90deg);
-    }
-    .neptune{
-        position: relative;
-        left: 57vw;
-        bottom: 30vw;
-        transform: rotate(90deg);
-    }
-    html{
-        overflow: scroll;
-    }
-    .bouton{
-      position: relative;
-      left: 63vw;
-      bottom: 242vw;
-    }
-    .w-100{
-      width: 335% !important;
-    }
-    .img-fluid{
-      max-width: 335% !important;
-      height: auto;
-    }
-    .w-10{
-      width: 18% !important;
-    }
-}
-
-/* Animation pour bouton ou logo de page d'accueil si pas souvenir : https://www.blogduwebdesign.com/effets-de-hover-images-text-svg-css/ 
-( c'est le 7 :1 )*/
-/* 
-.container
-  padding: 100px 0
-  text-align: center
-.title
-  display: inline-block
-  font-size: 120px
-  position: relative
-  text-transform: uppercase
-
-// First example
-.container--one
-  @extend .container
-  background-color: #eee
-  
-.title--one
-  @extend .title
-  color: #444
-  font-family: 'Helvetica', sans-serif
-  font-weight: 600
-  letter-spacing: 2px
-  &:after
-    content: attr(data-text)
-    color: #333
-    height: 0
-    left: 0
-    position: absolute
-    overflow: hidden
-    top: 0
-    transition: height .3s ease .2s
-  &:before
-    background-color: #444
-    bottom: 0
-    content: ''
-    left: 0
-    height: 4px
-    position: absolute
-    transition: width .4s ease-in
-    width: 0%
-  &:hover
-    &:after
-      height: 100%
-    &:before
-      width: 100%
-  */
-
-
-/* Hover qui change de couleur a la suite (peut etre bg) si pas souvenir lien : https://www.blogduwebdesign.com/effets-de-hover-images-text-svg-css/
-( c'est le dernier ) */
-/* 
- @color1: #00ba84;
-@color2: #65cc9b;
-@color3: #8dfb95;
-@color4: #32c87f;
-  
-@lightBg: #faffdd;
-@darkBg: #212a2c;
-
-body, html{
-  background-color: @darkBg;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Helvetica Neue';
-}
-
-.text{
-  color: #252545;
-  font-size: 32px;
-  font-weight: 500;
-  text-shadow: 0px 5px rgba(20,30,40,0.2);
-  letter-spacing: 0.15em;
-  transition: all .6s ease-out;
-}
-
-.container{
-  background-color: @lightBg;
-  width: 300px;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  // there is a glitch in chrome with 
-  // borders when animated, the overflow 
-  // hidden doesnt work on them, so you 
-  // have to use z-index: 0
-  border-radius: 8px;
-  z-index: 0;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 10px 20px -5px rgba(0,5,10,.5);
-  .content{
-    z-index: 10;
+@media (max-width:650px) {
+  .soleil {
+    position: relative;
+    left: 23vw;
   }
-  .animation-container{
-    z-index: 0;
+
+  .w-85 {
+    width: 100% !important;
   }
-  .animated-bg{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+
+  .mercure {
+    position: relative;
+    left: 13vw;
+    top: 3vw;
+    transform: rotate(90deg);
+  }
+
+  .w-8 {
+    width: 20% !important;
+  }
+
+  .venus {
+    position: relative;
+    bottom: 1vw;
+    left: 46vw;
+    transform: rotate(90deg);
+  }
+
+  .w-15 {
+    width: 34.5% !important;
+  }
+
+  .terre {
+    position: relative;
+    left: 4vw;
+    bottom: 15vw;
+    transform: rotate(0deg);
+  }
+
+  .w-16 {
+    width: 39% !important;
+  }
+
+  .mars {
+    position: relative;
+    left: 36vw;
+    top: 20vw;
+    transform: rotate(90deg);
+  }
+
+  .w-9 {
+    width: 23.5% !important;
+  }
+
+  .jupiter {
+    position: relative;
+    left: -10vw;
+    bottom: 3vw;
+    transform: rotate(90deg);
+  }
+
+  .w-35 {
+    width: 70% !important;
+  }
+
+  .saturne {
+    position: relative;
+    left: 43vw;
+    bottom: 22vw;
+    transform: rotate(60deg);
+  }
+
+  .w-42 {
+    width: 103% !important;
+  }
+
+  .uranus {
+    position: relative;
+    left: -5vw;
+    bottom: 22vw;
+    transform: rotate(90deg);
+  }
+
+  .neptune {
+    position: relative;
+    left: 57vw;
+    bottom: 30vw;
+    transform: rotate(90deg);
+  }
+
+  html {
+    overflow: scroll;
+  }
+
+  .bouton {
+    position: relative;
+    left: 63vw;
+    bottom: 242vw;
+  }
+
+  .w-100 {
+    width: 335% !important;
+  }
+
+  .img-fluid {
+    max-width: 335% !important;
+    height: auto;
+  }
+
+  .w-10 {
+    width: 18% !important;
+  }
+}
+
+/* ////////////////////////// ETOILES FILANTES TEH ////////////////////// */
+
+
+.etoile{
     position: absolute;
-    //transition: all .4s ease-in;
-
-  }
-  .top{
-    background-color: @color1;
-    top: ~"calc(-200px)";
-    left: ~"calc(50% - 100px)";
-  }
-  .left{
-    background-color: @color2;
-    left: -200px;
-    z-index: 1;
-  }
-  .right{
-    background-color: @color3;
-    z-index: 2;
-    left: 100%;
-  }
-  .bottom{
-    z-index: 3;
-    background-color: @color4;
-    top: 100%;
-  }
-  
-  &:hover{
-    .text{
-      color: #fff;
-      text-shadow: 2px 2px rgba(3,10,30,0.4);
-    }
-    .animated-bg{
-      transform: scale(10)
-    }
-    .top{
-      transition: all .3s ease-in-out
-    }
-    .left{
-      transition: all .3s .2s ease-in-out
-    }
-    .right{
-      transition: all .35s .4s ease-in-out
-
-    }
-    .bottom{
-      transition: all .4s 0.65s ease-in-out
-    }
-    
-  }
+    top: 0;
+    right: 25%;
+    width: 100%;
+    height: 100vh;
+    animation: animateBg 50s linear infinite;
 }
 
-.me{
-  text-align: center;
-  color: lighten(@darkBg, 15%);
-  margin: 30px 0 10px;
-  a{
-    display: block;
-    margin: 4px;
-    text-decoration: none;
-    text-shadow: 0 1px rgba(0,0,0,0.5);
-    color: @color1;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    transition: all 0.2s cubic-bezier(0.56, 0.03, 0.51, 2.28);
-    &:hover{
-      color: @color2;
-      transform: scale(1.1);
+@keyframes animateBg{
+    0%
+    {
+        transform: scale(1);
     }
-  }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+span{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 4px;
+    height:4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+
+span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff, transparent);
+    /* left: 30px; */
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-2000px);
+        opacity: 0;
+    }
+}
+
+span:nth-child(1){
+    top: 100px;
+    right: -1%;
+    left: inherit;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    z-index: 997;
+}
+
+/* ( haut gauche) */
+/* span:nth-child(2){
+    top: 0;
+    right: 800px;
+    left: initial;
+    animation-delay: 0.7s;
+    animation-duration: 1.5s;
+
 } */
+/* ( bas droite ) */
+span:nth-child(3){
+    top: 0vw;
+    left: 160vw;
+    animation-delay: 0.4s;
+    animation-duration: 3.5s;
+
+}
+

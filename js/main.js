@@ -6,6 +6,22 @@
 //     location.href = "http://www.cnn.com";
 // })
 
+// let test1 = ["animationBouton", "animationBouton2"]
+
+// $(document).ready(function () {
+//     $(".bouton").mouseover(function () {
+//         $(".bouton").css("transform", "scale(1.25)");
+//         test1[1].style.setProperty("animation", "1.5s")
+//     });
+
+//     $(".bouton").mouseout(function () {
+//         $(".bouton").css("transform", "scale(1)");
+//         test1[2].style.setProperty("animation", "1.5s")
+//     });
+
+// })
+
+
 function redirectTerre(){ 
     window.open('https://fr.wikipedia.org/wiki/Terre');
 }
