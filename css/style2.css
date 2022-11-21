@@ -1545,14 +1545,14 @@ body {
 
 /* //////////////////// ETOILES FILANTES ////////////////////// */
 
-/* .etoile{
+.etoile{
     position: absolute;
     top: 0;
     left: 10%;
     width: 100%;
     height: 100vh;
     animation: animateBg 50s linear infinite;
-} */
+}
 
 @keyframes animateBg{
     0%
@@ -1622,13 +1622,13 @@ span:nth-child(2){
 
 }
 /* ( bas droite ) */
-/* span:nth-child(3){
-    top: 600px;
-    right: 300px;
+span:nth-child(3){
+    top: 40vw;
+    right: 50vw;
     animation-delay: 0.4s;
     animation-duration: 3.5s;
 
-} */
+}
 
 
 
