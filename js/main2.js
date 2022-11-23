@@ -18,7 +18,7 @@ $(document).ready(function () {
 let test = [".un", ".deux", ".trois", ".quatre", ".cinq", ".six", ".sept", ".huit"]
 console.log(`${test}`)
 let test2 = ["allezun", "allezdeux", "alleztrois", "allezquatre", "allezcinq", "allezsix", "allezsept", "allezhuit"]
-let test3 = "opun"
+// let test3 = "opun"
 // , "opdeux","optrois","opquatre","opcinq","opsix","opsept","ophuit"
 // FOLD UNFOLD CLASS, verifie quand t'appuie sur un bouton. Créer les class fold et unfold suivant si t'a appuyer pour "ouvrir" le bouton ou si t'appuie pour le "fermer"
 let stylesheet = document.styleSheets[1]
@@ -48,9 +48,9 @@ animation.addEventListener("click", function () {
             let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.fold ~ ${test[i]}`)
             // console.log(stylesheet.cssRules[un])
             un.style.setProperty("animation", `${test2[i]} 0.65s reverse`)
-            // setTimeout(() => {
-            //     un.style.setProperty("opacity", "0")
-            // }, 650);
+            setTimeout(() => {
+                un.style.setProperty("opacity", "0")
+            }, 650);
 
             // un.style.setProperty("animation", `${test3} 3s`)
         }

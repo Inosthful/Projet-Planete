@@ -1,13 +1,13 @@
 /* font-family: 'Libre Baskerville', serif;  geioprzhj^GHIEZrhzpho*/
 /* -------------------------------------------------------------------------- */
 body {
-    background-image: url(/Images/fond\ espace\ image.jpg);
+    background-image: url(../Images/fondetoile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     position: relative;
-    cursor: url(/Images/cursor.png), default;
+    cursor: url(../Images/cursor.png), default;
     overflow: hidden;
 }
 
