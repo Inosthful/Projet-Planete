@@ -29,7 +29,7 @@ animation.addEventListener("click", function () {
     if (animation.classList.contains("unfold")) {
         for (i = 0; i < 8; i++) {
 
-            let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.unfold ~ ${test[i]}`)
+            let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.unfold ~ ${test[i]}` )
             // console.log(stylesheet.cssRules[un])
             un.style.removeProperty("animation")
             setTimeout(() => {
@@ -47,7 +47,7 @@ animation.addEventListener("click", function () {
 
             let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.fold ~ ${test[i]}`)
             // console.log(stylesheet.cssRules[un])
-            un.style.setProperty("animation", `${test2[i]} 0.65s reverse`)
+            un.style.setProperty("animation", `${test2[i]} 0.5s reverse`)
             setTimeout(() => {
                 un.style.setProperty("opacity", "0")
             }, 650);
@@ -67,7 +67,7 @@ animation.addEventListener("click", function () {
 
             let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.unfold ~ ${test[i]}`)
             // console.log(stylesheet.cssRules[un])
-            un.style.setProperty("animation", `${test2[i]} 1.5s`)
+            un.style.setProperty("animation", `${test2[i]} 1s`)
         }
     }
     else {
@@ -83,6 +83,42 @@ animation.addEventListener("click", function () {
         }
     }
 })
+
+
+
+function redirect1() {
+    window.open('https://fr.wikipedia.org/wiki/Mercure');
+}
+
+
+function redirect2() {
+    window.open('https://fr.wikipedia.org/wiki/Venus');
+}
+
+
+function redirect3() {
+    window.open('https://fr.wikipedia.org/wiki/Mars');
+}
+
+function redirect4() {
+    window.open('https://fr.wikipedia.org/wiki/Terre');
+}
+
+function redirect5() {
+    window.open('https://fr.wikipedia.org/wiki/Jupiter');
+}
+
+function redirect6() {
+    window.open('https://fr.wikipedia.org/wiki/Saturne');
+}
+
+function redirect7() {
+    window.open('https://fr.wikipedia.org/wiki/Uranus');
+}
+
+function redirect8() {
+    window.open('https://fr.wikipedia.org/wiki/Neptune');
+}
 
 // BULLE ANIMATION
 // const wrapper = document.getElementById("bulle-wrapper")
@@ -875,39 +911,7 @@ animation.addEventListener("click", function () {
 
 
 
-function redirect1() {
-    window.open('https://fr.wikipedia.org/wiki/Mercure');
-}
 
-
-function redirect2() {
-    window.open('https://fr.wikipedia.org/wiki/Venus');
-}
-
-
-function redirect3() {
-    window.open('https://fr.wikipedia.org/wiki/Mars');
-}
-
-function redirect4() {
-    window.open('https://fr.wikipedia.org/wiki/Terre');
-}
-
-function redirect5() {
-    window.open('https://fr.wikipedia.org/wiki/Jupiter');
-}
-
-function redirect6() {
-    window.open('https://fr.wikipedia.org/wiki/Saturne');
-}
-
-function redirect7() {
-    window.open('https://fr.wikipedia.org/wiki/Uranus');
-}
-
-function redirect8() {
-    window.open('https://fr.wikipedia.org/wiki/Neptune');
-}
 
 // function redirectAccueil(){
 //     window.open('page.html');
