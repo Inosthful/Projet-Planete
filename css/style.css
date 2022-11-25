@@ -1,14 +1,14 @@
 html {
   /* box-sizing: border-box; */
   overflow: hidden;
-  cursor: url(/Images/cursor.png), default;
+  cursor: url(../Images/cursor.png), default;
   /* max-height: 50vh !important; */
 }
 
 /* box shadow de l'icone -webkit-box-shadow: 2.5px 2.5px 18px 2.5px #030270; 
 box-shadow: 2.5px 2.5px 18px 2.5px #030270; */
 body {
-  background-image: url(/Images/fond\ espace\ image.jpg);
+  background-image: url(../Images/fond\ espace\ image.jpg);
   /* background-image: url(/Images/etoiles.png); */
   /* width: auto; */
   /* background-image: url(/Images/nebuleuse\ test.png); */
