@@ -64,8 +64,10 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 .texteAccueil {
     font-size: 35px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Libre Baskerville', serif;
     /* padding: 16vw;
+
     margin-left: 16vw; */
 }
 
@@ -81,7 +83,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
     /* Adjust as needed */
-    animation: typing 4.5s steps(100, end),
+    animation: typing 3s steps(100, end),
         blink-caret 0.75s step-end infinite;
 }
 
@@ -112,9 +114,9 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
     /* Adjust as needed */
-    animation: typingg 4.5s steps(150, end),
+    animation: typingg 3s steps(150, end),
         blink-carett 0.75s step-end infinite,
-        typingg2 5s steps(150, end)
+        typingg2 3s steps(150, end)
 }
 
 @keyframes typingg {
@@ -170,6 +172,8 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     border-radius: 30px;
     box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
     margin-top: 20px;
+    z-index: 998;
+    
 }
 
 .boutonStylax::after {
