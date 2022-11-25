@@ -8,7 +8,7 @@ html {
 /* box shadow de l'icone -webkit-box-shadow: 2.5px 2.5px 18px 2.5px #030270; 
 box-shadow: 2.5px 2.5px 18px 2.5px #030270; */
 body {
-  background-image: url(../Images/fond\ espace\ image.jpg);
+  background-image: url(../Images/fondetoile.jpg);
   /* background-image: url(/Images/etoiles.png); */
   /* width: auto; */
   /* background-image: url(/Images/nebuleuse\ test.png); */
@@ -136,7 +136,7 @@ a {
 
 .jupiter {
   position: relative;
-  bottom: 50vw;
+  bottom: 50.8vw;
   left: 32vw;
   transition: all 1.5s ease-in-out;
   margin: 0;
@@ -159,8 +159,8 @@ a {
 
 .uranus {
   position: relative;
-  bottom: 71vw;
-  left: 52vw;
+  bottom: 74.5vw;
+  left: 54vw;
   transition: all 1.5s ease-in-out;
 }
 
@@ -302,13 +302,13 @@ a {
   }
 
   html {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .bouton {
     position: relative;
-    left: 63vw;
-    bottom: 242vw;
+    left: 61vw;
+    bottom: 233vw;
   }
 
   .w-100 {
