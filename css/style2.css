@@ -1571,7 +1571,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     }
 }
 
-span{
+.filant{
     position: absolute;
     top: 30%;
     left: 70%;
@@ -1585,7 +1585,7 @@ span{
     animation: animate 3s linear infinite;
 }
 
-span::before{
+.filant::before{
     content:'';
     position: absolute;
     top: 101%;
@@ -1595,6 +1595,8 @@ span::before{
     background: linear-gradient(90deg,#fff, transparent);
     /* left: 30px; */
 }
+
+
 
 @keyframes animate{
     0%{
@@ -1610,7 +1612,7 @@ span::before{
     }
 }
 
-span:nth-child(1){
+.filant:nth-child(1){
     top: -4vw;
     right: 0;
     left: inherit;
@@ -1620,7 +1622,7 @@ span:nth-child(1){
 }
 
 /* ( haut gauche) */
-span:nth-child(2){
+.filant:nth-child(2){
     top: -4vw;
     right: 800px;
     left: initial;
@@ -1630,7 +1632,7 @@ span:nth-child(2){
 
 }
 /* ( bas droite ) */
-span:nth-child(3){
+.filant:nth-child(3){
     top: 40vw;
     left: 19vw;
     animation-delay: 0.4s;
@@ -1670,3 +1672,70 @@ span:nth-child(3){
         transform: translate(-50%, -20%);
         }
 } */
+
+/* ////////////////////////////////////////////// */
+
+
+  
+  .unDiv{
+    text-align:center; 
+    background: transparent;
+
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    
+  }
+  .global{
+    display: inline-block;
+    white-space:nowrap;
+    overflow: hidden;
+    font-size: 42px;
+    color: #ffffff;
+    font-weight:10;
+    font-family: 'Libre Baskerville', serif;
+    height:5vh;
+    margin-left: 15px;
+    
+
+  }
+  
+  .global:first-of-type{ 
+    animation: showup 7s infinite;
+  }
+
+  .global:last-of-type{
+    animation: reveal 7s infinite;
+    width: 0px;
+    color: #fff;
+  }
+  
+  .global:last-of-type .slide{
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+  }
+  
+
+
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:600px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:600px;}
+  }
