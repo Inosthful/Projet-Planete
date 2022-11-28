@@ -14,23 +14,25 @@ body {
 text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir aussi*/
 /* //////////////////////////// Header /////////////////////////////////// */
 .couleurPrenom {
-    color: rgb(76, 2, 136); /* Couleur ( blue bg d'apres mathis donc a test ) */
-    font-family: 'Libre Baskerville', serif;
-    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 35px;
     text-shadow: 0px 1px 1px rgb(0, 0, 0);
     /* display: flex;
     justify-content: center; */
     overflow: hidden;
 
-    /* border-right: .10em solid rgb(113, 5, 146);  The typwriter cursor  */
+    color: rgba(81, 10, 163, 0.945);
+    /* bordrgb(166, 138, 185)t: .10em solid rgb(113, 5, 146);  The typwriter cursor  */
     white-space: nowrap;
     /* Keeps the content on a single line */
     /* margin: 0 auto; */
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em;
     /* Adjust as needed */
-    animation: typing 3s steps(100, end),
-        blink-caret 0.75s step-end infinite;
+    
+    animation: typing 3s steps(100, end), 
+        blink-caret 0.75s step-end infinite;    
 }
 
 .couleurNav:focus,
@@ -65,7 +67,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 .texteAccueil {
     font-size: 35px;
     color: rgba(255, 255, 255, 0.87);
-    font-family: 'Libre Baskerville', serif;
+
     /* padding: 16vw;
 
     margin-left: 16vw; */
@@ -80,6 +82,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
+
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
     /* Adjust as needed */
@@ -111,6 +114,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
+
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
     /* Adjust as needed */
@@ -159,7 +163,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 /* ////////////////////////////////// BOUTON STYLAX MILIEU /////////////////////////////////////// */
 
 
-.boutonStylax {
+/* .boutonStylax {
     padding: 20px 70px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -195,24 +199,83 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 .boutonStylax:hover {
     transform: translate(0, -6px);
     box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
-}
+} */
+
+
+
+.container {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    /* height: 6vh; */
+    z-index: 999;
+  }
+  
+  .btnColor {
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    /* text-transform: uppercase; */
+    border-radius: 28px;
+  }
+  
+  .btnMilieu {
+    text-decoration: none;
+    border: 2px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .btnMilieu:hover {
+    box-shadow: 1px 1px 25px 10px rgba(78, 80, 161, 0.4);
+    color: #fff;
+  }
+  
+  .btnMilieu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.5rem;
+    background: linear-gradient(
+      100deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btnMilieu:hover:before {
+    left: 100%;
+  }
+
 
 /* //////////////////////////////// BOUTON "+"  ////////////////////////////////////// */
 
+
+
+
 .share {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
-    background-color: rgb(76, 2, 136);
+    background-color: rgba(81, 10, 163, 0.945);
     position: absolute;
     top: 0.2vw;
     right: 4vw;
     z-index: 999;
     text-align: center;
     overflow: hidden;
-    line-height: 46px;
-    font-size: 1.5em;
+    line-height: 54px;
+    font-size: 100px;
     color: #fff;
     -moz-box-shadow: 0px 3px 9px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, .5);
@@ -245,7 +308,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     line-height: 49px;
     font-size: 1.5em;
     top: 0.2vw;
-    right: 4vw;
+    right: 5.3vw;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, .2);
@@ -396,8 +459,8 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
         opacity: 0;
     }
     to{
-        top: 120px;
-        left:-14vw;
+        top: 123px;
+        left:-13.5vw;
         opacity: 1;
     }
 }
@@ -432,8 +495,8 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
         opacity: 0;
     }
     to{
-        top: 120px;
-        left: 0.1vw;
+        top: 128px;
+        left: 0.2vw;
         opacity: 1;
     }
 }
@@ -483,7 +546,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 } */
 
 
-
 /* .unfold{
     
 } */
@@ -501,8 +563,8 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 }
 .share.unfold ~ .trois{
-    top: 120px;
-    left:-14vw;
+    top: 123px;
+    left:-13.5vw;
     display: block;
 
 }
@@ -519,8 +581,8 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 }
 .share.unfold ~ .six{
-    top: 120px;
-    left: 0.1vw;
+    top: 128px;
+    left: 0.2vw;
     display: block;
 
 }
@@ -626,7 +688,244 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 
 
-@media(max-width:1500px){
+
+
+
+
+/* //////////////////////// FOOTER ///////////////////////// */
+
+.couleurStates {
+    /* margin-right: 10px; */
+    color: rgb(199, 48, 236);
+    transition: all 0.25s ease-in-out;
+}
+
+/* .couleurStates:hover{
+
+} */
+
+.couleurStates2 {
+
+    color: rgb(199, 48, 236);
+    transition: all 0.25s ease-in-out;
+    /* color: #d6249f;
+    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+}
+
+.btn {
+    border: none;
+    border-radius: 50%;
+    color: #000000;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    background-color: #b94fff50;
+
+}
+
+.btn:hover {
+
+    background-color: #480475;
+
+}
+
+
+/* //////////////////// ETOILES FILANTES ////////////////////// */
+
+.etoile{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100vh;
+    animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.filant{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 4px;
+    height:4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+
+.filant::before{
+    content:'';
+    position: absolute;
+    top: 101%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff, transparent);
+    /* left: 30px; */
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-2000px);
+        opacity: 0;
+    }
+}
+
+.filant:nth-child(1){
+    top: -4vw;
+    right: 0;
+    left: inherit;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    z-index: -2;
+}
+
+/* ( haut gauche) */
+.filant:nth-child(2){
+    top: -4vw;
+    right: 800px;
+    left: initial;
+    animation-delay: 0.7s;
+    animation-duration: 1.5s;
+    z-index: -2;
+
+}
+/* ( bas droite ) */
+.filant:nth-child(3){
+    top: 40vw;
+    left: 19vw;
+    animation-delay: 0.4s;
+    animation-duration: 3.5s;
+    z-index: -2;
+}
+
+
+
+/* ////////////////////////////////////// Bulle //////////////////////////////////// */
+
+/* #bulle-wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0vw;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bulle{
+    height: max(300px,30vw);
+    width: max(300px,30vw);
+    background: rgb(50, 43, 116);
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 102%;
+    animation: wave 2.5s ease-in-out infinite;
+}
+
+@keyframes wave{
+    from, to{
+        transform: translate(-50%,0%);
+    }
+    50%{
+        transform: translate(-50%, -20%);
+        }
+} */
+
+/* ////////////////////////////////////////////// */
+
+
+  
+  .unDiv{
+    text-align:center; 
+    background: transparent;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+
+    
+  }
+  .global{
+    display: inline-block;
+    white-space:nowrap;
+    overflow: hidden;
+    font-size: 42px;
+    color: #ffffff;
+    font-weight:10;
+    font-family: 'Orbitron', sans-serif;
+    height:8vh;
+    margin-left: 15px;
+    z-index: 999;
+    padding-left: 5px;
+
+  }
+  
+  .global:first-of-type{ 
+    animation: showup 7s infinite;
+  }
+
+  .global:last-of-type{
+    animation: reveal 7s infinite;
+    width: 0px;
+    color: #fff;
+  }
+  
+  .global:last-of-type .slide{
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+  }
+  
+
+
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:600px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:600px;}
+  }
+
+
+
+
+  @media(max-width:1500px){
     #boutonPlus:checked ~ .un{
         top: 1px;
         left: -19vw;
@@ -1354,8 +1653,23 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
             opacity: 1;
         }
     }
+    .global{
+        font-size: 34px;
+        margin-left: 7vw;
+    }
+    .unDiv{
+        width: 22%;
+        margin-right: -6vw;
+        /* margin-left: 8vw; */
+    }
+    
 }
 
+@media(max-width:680px){
+    .unDiv{
+        margin-right: -5.5vw;
+    }
+}
 
 @media(max-width:575px){
     .share{
@@ -1507,235 +1821,14 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
             opacity: 1;
         }
     }
-}
-
-
-
-/* //////////////////////// FOOTER ///////////////////////// */
-
-.couleurStates {
-    /* margin-right: 10px; */
-    color: rgb(199, 48, 236);
-    transition: all 0.25s ease-in-out;
-}
-
-/* .couleurStates:hover{
-
-} */
-
-.couleurStates2 {
-
-    color: rgb(199, 48, 236);
-    transition: all 0.25s ease-in-out;
-    /* color: #d6249f;
-    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
-}
-
-.btn {
-    border: none;
-    border-radius: 50%;
-    color: #000000;
-    padding: 10px 14px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.6s ease-in-out;
-    background-color: #b94fff50;
-
-}
-
-.btn:hover {
-
-    background-color: #480475;
-
-}
-
-
-/* //////////////////// ETOILES FILANTES ////////////////////// */
-
-.etoile{
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 100%;
-    height: 100vh;
-    animation: animateBg 50s linear infinite;
-}
-
-@keyframes animateBg{
-    0%
-    {
-        transform: scale(1);
+    /* .global{
+        font-size: 25px;
+        margin-left: 4vw;
     }
-    50%{
-        transform: scale(1.2);
-    }
+    .unDiv{
+        width: 22%;
+        margin-right: -2vw;
+
+    } */   /* A faire le media query pour tel parce que ca bug de zinzin sur pc de chez moi
+    imo il faut aussi reduire le bouton en format telephone */
 }
-
-.filant{
-    position: absolute;
-    top: 30%;
-    left: 70%;
-    width: 4px;
-    height:4px;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
-    0 0 0 8px rgba(255,255,255,0.1),
-    0 0 20px rgba(255,255,255,0.1);
-    animation: animate 3s linear infinite;
-}
-
-.filant::before{
-    content:'';
-    position: absolute;
-    top: 101%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
-    background: linear-gradient(90deg,#fff, transparent);
-    /* left: 30px; */
-}
-
-
-
-@keyframes animate{
-    0%{
-        transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: rotate(315deg) translateX(-2000px);
-        opacity: 0;
-    }
-}
-
-.filant:nth-child(1){
-    top: -4vw;
-    right: 0;
-    left: inherit;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    z-index: -2;
-}
-
-/* ( haut gauche) */
-.filant:nth-child(2){
-    top: -4vw;
-    right: 800px;
-    left: initial;
-    animation-delay: 0.7s;
-    animation-duration: 1.5s;
-    z-index: -2;
-
-}
-/* ( bas droite ) */
-.filant:nth-child(3){
-    top: 40vw;
-    left: 19vw;
-    animation-delay: 0.4s;
-    animation-duration: 3.5s;
-    z-index: -2;
-}
-
-
-
-/* ////////////////////////////////////// Bulle //////////////////////////////////// */
-
-/* #bulle-wrapper{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    bottom: 0vw;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.bulle{
-    height: max(300px,30vw);
-    width: max(300px,30vw);
-    background: rgb(50, 43, 116);
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    top: 102%;
-    animation: wave 2.5s ease-in-out infinite;
-}
-
-@keyframes wave{
-    from, to{
-        transform: translate(-50%,0%);
-    }
-    50%{
-        transform: translate(-50%, -20%);
-        }
-} */
-
-/* ////////////////////////////////////////////// */
-
-
-  
-  .unDiv{
-    text-align:center; 
-    background: transparent;
-
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
-    
-  }
-  .global{
-    display: inline-block;
-    white-space:nowrap;
-    overflow: hidden;
-    font-size: 42px;
-    color: #ffffff;
-    font-weight:10;
-    font-family: 'Libre Baskerville', serif;
-    height:5vh;
-    margin-left: 15px;
-    
-
-  }
-  
-  .global:first-of-type{ 
-    animation: showup 7s infinite;
-  }
-
-  .global:last-of-type{
-    animation: reveal 7s infinite;
-    width: 0px;
-    color: #fff;
-  }
-  
-  .global:last-of-type .slide{
-    margin-left: -355px;
-    animation: slidein 7s infinite;
-  }
-  
-
-
-  @keyframes showup {
-      0% {opacity:0;}
-      20% {opacity:1;}
-      80% {opacity:1;}
-      100% {opacity:0;}
-  }
-  
-  @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
-      35% { margin-left:0px; }
-      100% { margin-left:0px; }
-  }
-  
-  @keyframes reveal {
-      0% {opacity:0;width:0px;}
-      20% {opacity:1;width:0px;}
-      30% {width:600px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:600px;}
-  }
