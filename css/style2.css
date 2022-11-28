@@ -305,6 +305,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
   .btnMilieu:hover {
     box-shadow: 1px 1px 25px 10px rgba(78, 80, 161, 0.4);
     color: #fff;
+    cursor: none;
   }
   
   .btnMilieu:before {
@@ -791,16 +792,26 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     color: #000000;
     padding: 10px 14px;
     font-size: 16px;
-    cursor: none;
     transition: all 0.6s ease-in-out;
     background-color: #b94fff50;
 
 }
 
+#couleurteh2{
+    cursor: none;
+}
+
 .btn:hover {
+    cursor: none;
+    background-color: #552c6e;
 
-    background-color: #480475;
+}
 
+.btnEnzo{
+    cursor: none;
+}
+.btnEnzo2{
+    cursor: none;
 }
 
 
