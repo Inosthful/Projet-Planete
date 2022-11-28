@@ -13,7 +13,7 @@
 
 <body>
     <!-- <div class="planete"> -->
-    <img class="w-85 soleil img-fluid animationPlanete @include media-breakpoint-only(md) mx-auto d-block"
+    <img class="w-85 animationPlanete soleil img-fluid  @include media-breakpoint-only(md) mx-auto d-block"
         src="./Images/580b585b2edbce24c47b270f.png" alt="image soleil">
     <img onclick="redirectMercure()" class="w-8 mercure img-fluid mx-auto d-block " src="./Images/Mercure.png"
         alt="image mercure">
@@ -31,29 +31,18 @@
         src="./Images/Uranus ( pas sur du tout ).png" alt="image uranus">
     <img onclick="redirectNeptune()" class="w-15 neptune img-fluid rounded mx-auto d-block " src="./Images/Neptune.png"
         alt="image neptune">
-    <img onclick="redirectAccueil()" class="w-10 bouton img-fluid rounded mx-auto d-block" src="./BOUTON/STP.PNG"
-        alt="redirection accueil">
+    <img onclick="redirectAccueil()" class="w-10 bouton animationBouton img-fluid rounded mx-auto d-block"
+        src="./BOUTON/STP.PNG" alt="redirection  accueil">
     <section class="etoile">
         <span></span>
         <span></span>
         <span></span>
-        </section>
-      
-    <!-- </div> -->
-
-    <!-- GAMEPLAN SUITE : Format mobile a tout bien faire pixel avec le breakpoint, curseur changer   DONE -->
-    <!-- chercher si y'a pas d'autre animation que le "hover" qui irait bien avec le projet,  photo étoile fond transparent qui defile et je met
-le premier background iamge qui defile mais un peu plus lentement ( voir samuel s'il faut ) -->
-    <!-- FINIR LE BOUTON, LE SCREEN ET L INCRUSTER EN HAUT A DROITE EN POSITION RELATIVE I GUESS   DONE -->
-    <!-- faire les redirection des planetes a un truc ( m'en fou de ce que c'est ) DONE DONE, https://stackoverflow.com/questions/29933209/redirect-on-click-of-an-image -->
-    <!-- créer la page d'accueil juste avant le site ( un espece de " bienvenue sur mon portefolio, rentrez en cliquant ici" ou un bail similaire) -->
-    <!-- faire l'icone pour aller a la page d'accueil depuis toute les redirections et le systeme solaire  en cours ( fait que sur le
-        systeme solaire atm-)-->
+        </section> 
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

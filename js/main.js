@@ -22,6 +22,7 @@
 // })
 
 
+
 function redirectTerre(){ 
     window.open('https://fr.wikipedia.org/wiki/Terre');
 }

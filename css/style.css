@@ -1,18 +1,21 @@
 html {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   cursor: url(../Images/cursor.png), default;
   /* max-height: 50vh !important; */
 }
 
+
+/* Idée d'hover quand tu passes ta souris sur une planete ca met une preview de la page surlaquel ca va te 
+rediriger au lieu d'un vieux  truc qui tourne et qui grossit */
+
+
 /* box shadow de l'icone -webkit-box-shadow: 2.5px 2.5px 18px 2.5px #030270; 
 box-shadow: 2.5px 2.5px 18px 2.5px #030270; */
 body {
   background-image: url(../Images/fondetoile.jpg);
-  /* background-image: url(/Images/etoiles.png); */
-  /* width: auto; */
-  /* background-image: url(/Images/nebuleuse\ test.png); */
-  /* transform: translateX(15px); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 59%;
@@ -22,10 +25,12 @@ body {
 
 .bouton {
   /* height: 100%; */
-
+  animation:boutonBouge 3s ;
   position: relative;
   left: 66.4vw;
-  bottom: 129.5vw;
+  bottom: 127.5vw;
+  transition: all 1.5s ease-in-out;
+  z-index: 998;
 }
 
 a {
@@ -33,11 +38,9 @@ a {
   position: static;
 }
 
-.bouton:hover {
-
-  animation: animationBouton 1s;
-  transform: scale(125%);
-
+.animationBouton:hover {
+  transform: scale(105%);
+  transform: scale(120%);
 }
 
 /* .bouton::before{
@@ -45,38 +48,149 @@ a {
   transform: scale(100%);
 } */
 
-@keyframes animationBouton {
-  from {
-    transform: scale(100%);
-  }
 
-  to {
-    transform: scale(125%);
+
+@keyframes venusBouge {
+  from{
+    bottom: 70vw;
+
+    opacity: 0;
+  }
+  to{
+    bottom: 50vw;
+    left: 5vw;
+    opacity: 1;
   }
 }
 
-/* @keyframes animationBouton2 {
-  from {
-    transform: scale(125%);
+@keyframes marsBouge {
+  from{
+    bottom: 70vw;
+    left: vw;
+    opacity: 0;
   }
-
-  to {
-    transform: scale(100%);
+  to{
+    bottom: 47vw;
+    left: 23vw;
+    opacity: 1;
   }
-} */
+}
 
+@keyframes mercureBouge {
+  from{
+    bottom: 70vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    right: 3vw;
+    bottom: 31vw;
+    opacity: 1;
+  }
+}
+
+@keyframes terreBouge {
+  from{
+    bottom: 85vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    bottom: 42vw;
+    left: 13vw;
+    opacity: 1;
+  }
+}
+
+@keyframes jupiterBouge {
+  from{
+    bottom: 100vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    bottom: 50.8vw;
+    left: 32vw;
+    opacity: 1;
+  }
+}
+
+@keyframes saturneBouge {
+  from{
+    bottom: 120vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    bottom: 93vw;
+    left: 43vw;
+    opacity: 1;
+  }
+}
+
+@keyframes uranusBouge {
+  from{
+    bottom: 125vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    bottom: 74.5vw;
+    left: 54vw;
+    opacity: 1;
+  }
+}
+
+@keyframes neptuneBouge {
+  from{
+    bottom: 150vw;
+    left: vw;
+    opacity: 0;
+  }
+  to{
+    bottom: 99vw;
+    left: 63vw;
+    opacity: 1;
+  }
+}
+
+@keyframes soleilBouge {
+  from{
+    right: 60vw;
+    opacity: 0;
+  }
+  to{
+    right: 30vw;
+    opacity: 1;
+
+  }
+}
+
+@keyframes boutonBouge {
+  from{
+    left: 80vw;
+    opacity: 0;
+    
+  }
+  to{
+    left: 66.4vw;
+    bottom: 127.5vw;
+    opacity: 1;
+
+  }
+}
 
 .soleil {
+  animation: soleilBouge 3s ease-out, constanteRotation 250s ease-out;
   position: relative;
-  /* right: 30vw;
-    bottom: -2.5vw;  Soleil plus cartoon */
   right: 30vw;
-  /* width: 86%; */
-  /* top: 2.5vw; */
+  transition: all 1.5s ease-in-out;
   z-index: 998;
+
 }
 
 .mars {
+  animation: marsBouge 4s;
   position: relative;
   /* left: 51%; */
   bottom: 47vw;
@@ -85,9 +199,12 @@ a {
   z-index: 998;
 }
 
-.animationPlanete {
+/* .animationPlanete {
+  animation-play-state: paused;
+  animation-delay: 3s;
   animation: constanteRotation 250s normal linear infinite;
-}
+  animation-play-state: running;
+} */
 
 /* .animationTerre {
     animation: constanteRotationTerre 60s normal linear infinite;
@@ -99,6 +216,7 @@ a {
 }
 
 .mercure {
+  animation: mercureBouge 3s;
   position: relative;
   right: 3vw;
   bottom: 31vw;
@@ -112,6 +230,7 @@ a {
 }
 
 .venus {
+  animation: venusBouge 3s;
   position: relative;
   bottom: 50vw;
   left: 5vw;
@@ -120,16 +239,18 @@ a {
 
 }
 
+
 .venus:hover {
   transform: rotate(360deg) scale(1.35);
 }
 
 .terre {
+  animation: terreBouge 3s;
   position: relative;
   bottom: 42vw;
   left: 13vw;
   transition: all 1.5s ease-in-out;
-  transform: rotate(290deg);
+  /* transform: rotate(290deg); */
   z-index: 998;
 }
 
@@ -138,12 +259,14 @@ a {
 }
 
 .jupiter {
+  animation: jupiterBouge 3s;
   position: relative;
   bottom: 50.8vw;
   left: 32vw;
   transition: all 1.5s ease-in-out;
   margin: 0;
   z-index: 998;
+
 }
 
 .jupiter:hover {
@@ -151,6 +274,7 @@ a {
 }
 
 .saturne {
+  animation: saturneBouge 3s;
   position: relative;
   bottom: 93vw;
   left: 43vw;
@@ -163,6 +287,7 @@ a {
 }
 
 .uranus {
+  animation: uranusBouge 3s;
   position: relative;
   bottom: 74.5vw;
   left: 54vw;
@@ -175,6 +300,7 @@ a {
 }
 
 .neptune {
+  animation: neptuneBouge 3s;
   position: relative;
   bottom: 99vw;
   left: 63vw;
@@ -335,9 +461,137 @@ a {
     }
     span{
       top: 50vw !important;
-      left: 90vw !important;
+      left: 105vw !important;
+    }
+    @keyframes venusBouge {
+      from{
+        left: 100vw;
+        opacity: 0;
+      }
+      to{
+        bottom: 1vw;
+        left: 46vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes marsBouge {
+      from{
+        left: 100vw;
+        opacity: 0;
+      }
+      to{
+        left: 36vw;
+        top: 20vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes mercureBouge {
+      from{
+        bottom: 70vw;
+        left: -43vw;
+        opacity: 0;
+      }
+      to{
+        left: 13vw;
+        top: 3vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes terreBouge {
+      from{
+        left: -42vw;
+        opacity: 0;
+      }
+      to{
+        left: 4vw;
+        bottom: 15vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes jupiterBouge {
+      from{
+    
+        left: -42vw;
+        opacity: 0;
+      }
+      to{
+        left: -10vw;
+        bottom: 3vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes saturneBouge {
+      from{
+    
+        left: 100vw;
+        opacity: 0;
+      }
+      to{
+        left: 43vw;
+        bottom: 22vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes uranusBouge {
+      from{
+    
+        left: -50vw;
+        opacity: 0;
+      }
+      to{
+        left: -5vw;
+        bottom: 22vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes neptuneBouge {
+      from{
+    
+        left: 100vw;
+        opacity: 0;
+      }
+      to{
+        left: 57vw;
+        bottom: 30vw;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes soleilBouge {
+      from{
+        left: 100vw;
+        opacity: 0;
+      }
+      to{
+        left: 23vw;
+        opacity: 1;
+    
+      }
+    }
+    
+    @keyframes boutonBouge {
+      from{
+        left: 100vw;
+        opacity: 0;
+        
+      }
+      to{
+        left: 61vw;
+        bottom: 233vw;
+        opacity: 1;
+    
+      }
     }
 }
+
+
 
 
 
@@ -351,7 +605,9 @@ a {
   left: 10%;
   width: 100%;
   height: 100vh;
+
   animation: animateBg 50s linear infinite;
+
 }
 
 @keyframes animateBg{
@@ -375,7 +631,9 @@ span{
   box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
   0 0 0 8px rgba(255,255,255,0.1),
   0 0 20px rgba(255,255,255,0.1);
+
   animation: animate 3s linear infinite;
+  animation-delay: 3.2s;
 }
 
 span::before{
@@ -386,7 +644,7 @@ span::before{
   width: 300px;
   height: 1px;
   background: linear-gradient(90deg,#fff, transparent);
-  /* left: 30px; */
+
 }
 
 @keyframes animate{
@@ -406,8 +664,8 @@ span::before{
 span:nth-child(1){
   top: -1vw;
   left: 36vw;
-  /* left: inherit; */
-  animation-delay: 0.5s;
+
+  animation-delay: 3.2s;
   animation-duration: 2s;
   z-index: -2;
 }
