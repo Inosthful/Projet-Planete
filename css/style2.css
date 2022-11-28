@@ -7,7 +7,8 @@ body {
     background-attachment: fixed;
     height: 100vh;
     position: relative;
-    cursor: url(../Images/cursor.png), default;
+    cursor: none;
+    /* cursor: url(../Images/cursor.png), default; */
     overflow: hidden;
 }
 /* Couleur ( blue bg d'apres mathis donc a test ) 
@@ -61,6 +62,78 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 .couleurDropdown:hover {
     background-color: rgb(19, 0, 63);
 }
+
+
+
+/* ///////////////////////////// Curseur ///////////////////////// */
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 1s infinite alternate;
+    pointer-events: none;
+    z-index: 999;
+  
+  
+  }
+  
+  .cursor::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 8px solid rgb(123, 74, 180);
+    border-radius: 50%;
+    opacity: .5;
+    top: -2px;
+    left: -2px;
+    animation: cursorAnim2 1s infinite alternate;
+    z-index: 999;
+  }
+  
+  @keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+  }
+  
+  @keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+  }
+  
+  @keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+  }
+  
+  .expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid rgb(103, 18, 172);
+  }
+
+/* ///////////////////////////// Curseur /////////////////////// */
+
 
 /* //////////////////////////////////// TEXTE AUTO / TEXTE ACCUEIL ////////////////////////////////////// */
 
@@ -166,7 +239,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 /* .boutonStylax {
     padding: 20px 70px;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: none;
     border: 0px;
     background: transparent;
     position: relative;
@@ -328,7 +401,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 .six:hover,
 .sept:hover,
 .huit:hover {
-    cursor: pointer;
+    cursor: none;
 }
 
 .one i,
@@ -718,7 +791,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     color: #000000;
     padding: 10px 14px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.6s ease-in-out;
     background-color: #b94fff50;
 
