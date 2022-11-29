@@ -1,3 +1,5 @@
+
+// FOOTER ANIMATION 
 $(document).ready(function () {
     $("#btnEnzo").mouseover(function () {
         $("#couleurteh").css("transform", "scale(1.1)");
@@ -15,6 +17,8 @@ $(document).ready(function () {
     });
 
 })
+
+// BOUTON + ANIMATION 
 let test = [".un", ".deux", ".trois", ".quatre", ".cinq", ".six", ".sept", ".huit"]
 console.log(`${test}`)
 let test2 = ["allezun", "allezdeux", "alleztrois", "allezquatre", "allezcinq", "allezsix", "allezsept", "allezhuit"]
@@ -84,6 +88,8 @@ animation.addEventListener("click", function () {
     }
 })
 
+// CURSEUR MOUVEMENT
+
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -98,6 +104,8 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+
+// REDIRECTION 
 
 function redirect1() {
     window.open('https://fr.wikipedia.org/wiki/Mercure');

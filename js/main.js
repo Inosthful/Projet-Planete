@@ -14,6 +14,8 @@
 
 // })
 
+// CURSEUR MOUVEMENT 
+
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -28,7 +30,7 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
-
+// REDIRECTION 
 
 function redirectTerre(){ 
     window.open('https://fr.wikipedia.org/wiki/Terre');

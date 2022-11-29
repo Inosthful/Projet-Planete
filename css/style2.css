@@ -129,86 +129,75 @@ body {
 
 /* ///////////////////////////// Curseur /////////////////////// */
 
+/* ///////////////////////// TEXTE ACCUEIL ///////////////////////////// */
 
-/* //////////////////////////////////// TEXTE AUTO / TEXTE ACCUEIL ////////////////////////////////////// */
-
-.texteAccueil {
-    font-size: 35px;
-    color: rgba(255, 255, 255, 0.87);
-
-    /* padding: 16vw;
-
-    margin-left: 16vw; */
-}
-
-.typeAuto {
-    display: flex;
-    justify-content: center;
+.unDiv{
+    text-align:center; 
+    background: transparent;
     overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .20em;
-    animation: typing 3s steps(100, end),
-        blink-caret 0.75s step-end infinite;
-}
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
 
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 75%
-    }
-}
-
-
-.typeAuto2 {
+    
+  }
+  .global{
+    display: inline-block;
+    white-space:nowrap;
     overflow: hidden;
-    border-right: .10em solid rgb(113, 5, 146);
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .20em;
-    animation: typingg 3s steps(150, end),
-        blink-carett 0.75s step-end infinite,
-        typingg2 3s steps(150, end)
-}
+    font-size: 42px;
+    color: #ffffff;
+    font-weight:10;
+    font-family: 'Orbitron', sans-serif;
+    height:8vh;
+    margin-left: 15px;
+    z-index: 999;
+    padding-left: 5px;
 
-@keyframes typingg {
-    from {
-        width: 100%
-    }
+  }
+  
+  .global:first-of-type{ 
+    animation: showup 7s infinite;
+  }
 
-    to {
-        width: 0%
-    }
-}
+  .global:last-of-type{
+    animation: reveal 7s infinite;
+    width: 0px;
+    color: #fff;
+  }
+  
+  .global:last-of-type .slide{
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+  }
+  
 
-@keyframes typingg2 {
-    from {
-        width: 0%
-    }
 
-    to {
-        width: 100%
-    }
-}
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:600px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:600px;}
+  }
 
-@keyframes blink-carett {
 
-    from,
-    to {
-        border-color: transparent
-    }
+/* ////////////////////////// TEXTE ACCUEIL ///////////////////////////// */
 
-    50% {
-        border-color: rgb(99, 5, 153);
-    }
-}
-
-.taille {
-    height: 10vh;
-}
 
 
 /* ////////////////////////////////// BOUTON STYLAX MILIEU /////////////////////////////////////// */
@@ -809,74 +798,7 @@ body {
         }
 } */
 
-/* ////////////////////////////////////////////// */
-
-
-  
-  .unDiv{
-    text-align:center; 
-    background: transparent;
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
-
-    
-  }
-  .global{
-    display: inline-block;
-    white-space:nowrap;
-    overflow: hidden;
-    font-size: 42px;
-    color: #ffffff;
-    font-weight:10;
-    font-family: 'Orbitron', sans-serif;
-    height:8vh;
-    margin-left: 15px;
-    z-index: 999;
-    padding-left: 5px;
-
-  }
-  
-  .global:first-of-type{ 
-    animation: showup 7s infinite;
-  }
-
-  .global:last-of-type{
-    animation: reveal 7s infinite;
-    width: 0px;
-    color: #fff;
-  }
-  
-  .global:last-of-type .slide{
-    margin-left: -355px;
-    animation: slidein 7s infinite;
-  }
-  
-
-
-  @keyframes showup {
-      0% {opacity:0;}
-      20% {opacity:1;}
-      80% {opacity:1;}
-      100% {opacity:0;}
-  }
-  
-  @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
-      35% { margin-left:0px; }
-      100% { margin-left:0px; }
-  }
-  
-  @keyframes reveal {
-      0% {opacity:0;width:0px;}
-      20% {opacity:1;width:0px;}
-      30% {width:600px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:600px;}
-  }
-
+/* /////////////////////// MEDIA QUERIES  /////////////////////// */
 
 
 
