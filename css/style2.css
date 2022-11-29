@@ -1,4 +1,8 @@
-/* font-family: 'Libre Baskerville', serif;  geioprzhj^GHIEZrhzpho*/
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    src: url(‘Fonts/Orbitron-Regular.ttf’)
+}
+
 /* -------------------------------------------------------------------------- */
 body {
     background-image: url(../Images/fondetoile.jpg);
