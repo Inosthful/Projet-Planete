@@ -73,5 +73,5 @@ function redirectNeptune(){
 }
 
 function redirectAccueil(){ 
-    window.open('page.html');
+    window.open('index.html');
 }
