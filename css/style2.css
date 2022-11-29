@@ -91,7 +91,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     border-radius: 50%;
     opacity: .5;
     top: -2px;
-    left: -2px;
+    left: -1px;
     animation: cursorAnim2 1s infinite alternate;
     z-index: 999;
   }
@@ -803,7 +803,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 .btn:hover {
     cursor: none;
-    background-color: #552c6e;
+    background-color: #8839b9;
 
 }
 

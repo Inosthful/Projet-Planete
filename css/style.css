@@ -38,8 +38,8 @@ rediriger au lieu d'un vieux  truc qui tourne et qui grossit */
   border-radius: 50%;
   opacity: .5;
   top: -2px;
-  left: -2px;
-  animation: cursorAnim2 1s infinite alternate;
+  left: -1px;
+  /* animation: cursorAnim2 1s infinite alternate; */
   z-index: 999;
 }
 
