@@ -26,9 +26,9 @@ body {
     color: rgba(81, 10, 163, 0.945);
     white-space: nowrap;
     letter-spacing: .10em;
-    
-    animation: typing 3s steps(100, end), 
-        blink-caret 0.75s step-end infinite;    
+
+    animation: typing 3s steps(100, end),
+        blink-caret 0.75s step-end infinite;
 }
 
 .couleurNav:focus,
@@ -73,11 +73,11 @@ body {
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
     z-index: 999;
-  
-  
-  }
-  
-  .cursor::after {
+
+
+}
+
+.cursor::after {
     content: "";
     width: 50px;
     height: 50px;
@@ -89,110 +89,154 @@ body {
     left: -1px;
     animation: cursorAnim2 1s infinite alternate;
     z-index: 999;
-  }
-  
-  @keyframes cursorAnim {
+}
+
+@keyframes cursorAnim {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(.7);
     }
-  }
-  
-  @keyframes cursorAnim2 {
+}
+
+@keyframes cursorAnim2 {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(.4);
     }
-  }
-  
-  @keyframes cursorAnim3 {
+}
+
+@keyframes cursorAnim3 {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(3);
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
-  }
-  
-  .expand {
+}
+
+.expand {
     animation: cursorAnim3 0.5s forwards;
     border: 1px solid rgb(103, 18, 172);
-  }
+}
 
 /* ///////////////////////////// Curseur /////////////////////// */
 
 /* ///////////////////////// TEXTE ACCUEIL ///////////////////////////// */
 
-.unDiv{
-    text-align:center; 
+.unDiv {
+    text-align: center;
     background: transparent;
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
 
-    
-  }
-  .global{
+
+}
+
+.global {
     display: inline-block;
-    white-space:nowrap;
+    white-space: nowrap;
     overflow: hidden;
     font-size: 40px;
     color: #ffffff;
-    font-weight:10;
+    font-weight: 10;
     font-family: 'Orbitron', sans-serif;
-    height:8vh;
+    height: 8vh;
     z-index: 999;
 
 
-  }
-  
-  .global:first-of-type{ 
-    animation: showup 7s infinite;
-  }
+}
 
-  .global:last-of-type{
+.global:first-of-type {
+    animation: showup 7s infinite;
+}
+
+.global:last-of-type {
     animation: reveal 7s infinite;
     width: 0px;
     color: #fff;
-  }
-  
-  .global:last-of-type .slide{
+}
+
+.global:last-of-type .slide {
     margin-left: -355px;
     animation: slidein 7s infinite;
-  }
-  
+}
 
 
-  @keyframes showup {
-      0% {opacity:0;}
-      20% {opacity:1;}
-      80% {opacity:1;}
-      100% {opacity:0;}
-  }
-  
-  @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
-      35% { margin-left:0px; }
-      100% { margin-left:0px; }
-  }
-  
-  @keyframes reveal {
-      0% {opacity:0;width:0px;}
-      20% {opacity:1;width:0px;}
-      30% {width:600px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:600px;}
-  }
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 600px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 600px;
+    }
+}
 
 
 /* ////////////////////////// TEXTE ACCUEIL ///////////////////////////// */
@@ -209,32 +253,32 @@ body {
     /* height: 6vh; */
     z-index: 999;
     padding-left: 1.5vw;
-  }
-  
-  .btnColor {
+}
+
+.btnColor {
     font-size: 1.8rem;
     padding: 1rem 3rem;
     color: #f4f4f4;
     /* text-transform: uppercase; */
     border-radius: 28px;
-  }
-  
-  .btnMilieu {
+}
+
+.btnMilieu {
     text-decoration: none;
     border: 2px solid rgb(146, 148, 248);
     position: relative;
     overflow: hidden;
     z-index: 999;
     font-family: 'Orbitron', sans-serif;
-  }
-  
-  .btnMilieu:hover {
+}
+
+.btnMilieu:hover {
     box-shadow: 1px 1px 25px 10px rgba(78, 80, 161, 0.4);
     color: #fff;
     cursor: none;
-  }
-  
-  .btnMilieu:before {
+}
+
+.btnMilieu:before {
     content: "";
     position: absolute;
     top: 0;
@@ -243,20 +287,18 @@ body {
     height: 100%;
 
     font-size: 1.5rem;
-    background: linear-gradient(
-      100deg,
-      transparent,
-      rgba(146, 148, 248, 0.4),
-      transparent
-    );
+    background: linear-gradient(100deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent);
     transition: all 650ms;
-  }
-  
-  .btnMilieu:hover:before {
-    left: 100%;
-  }
+}
 
-  .testMathis{
+.btnMilieu:hover:before {
+    left: 100%;
+}
+
+.testMathis {
     opacity: 0;
 }
 
@@ -287,7 +329,7 @@ body {
 .share:hover {
     cursor: pointer;
     background-color: rgb(113, 30, 207);
-    color:#000000;
+    color: #000000;
 }
 
 .un,
@@ -350,29 +392,35 @@ body {
 }
 
 
-.un{
+.un {
     opacity: 0;
-} 
+}
 
-.deux{
+.deux {
     opacity: 0;
 }
-.trois{
+
+.trois {
     opacity: 0;
 }
-.quatre{
+
+.quatre {
     opacity: 0;
 }
-.cinq{
+
+.cinq {
     opacity: 0;
 }
-.six{
+
+.six {
     opacity: 0;
 }
-.sept{
+
+.sept {
     opacity: 0;
 }
-.huit{
+
+.huit {
     opacity: 0;
 }
 
@@ -384,7 +432,7 @@ body {
 
 .venus {
     width: 105%;
-    
+
 }
 
 .mars {
@@ -416,18 +464,19 @@ body {
     width: 90%;
 }
 
-.plus{
+.plus {
     color: #000000;
     font-size: 30px;
 }
 
-@keyframes allezun{
-    from{
+@keyframes allezun {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 1px;
         left: -18.5vw;
         /* display: block; */
@@ -435,189 +484,209 @@ body {
     }
 }
 
-@keyframes allezdeux{
-    from{
+@keyframes allezdeux {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 70px;
-        left:-17vw;
+        left: -17vw;
         opacity: 1;
     }
 }
-@keyframes alleztrois{
-    from{
+
+@keyframes alleztrois {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 123px;
-        left:-13.5vw;
+        left: -13.5vw;
         opacity: 1;
     }
 }
-@keyframes allezquatre{
-    from{
+
+@keyframes allezquatre {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 160px;
-        left:-9.5vw;
+        left: -9.5vw;
         opacity: 1;
     }
 }
-@keyframes allezcinq{
-    from{
+
+@keyframes allezcinq {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 160px;
-        left:-4vw; 
+        left: -4vw;
         opacity: 1;
     }
 }
-@keyframes allezsix{
-    from{
+
+@keyframes allezsix {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 128px;
         left: 0.2vw;
         opacity: 1;
     }
 }
-@keyframes allezsept{
-    from{
+
+@keyframes allezsept {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
     }
-    to{
+
+    to {
         top: 70px;
-        left:4vw;
+        left: 4vw;
         opacity: 1;
     }
 }
-@keyframes allezhuit{
-    from{
+
+@keyframes allezhuit {
+    from {
         top: 0.2px;
         left: -6.5vw;
         opacity: 0;
 
     }
-    to{
+
+    to {
         top: 1px;
         left: 5.5vw;
         opacity: 1;
     }
 }
 
-.share.unfold ~ .un{
+.share.unfold~.un {
     top: 1px;
     left: -18.5vw;
     display: block;
 }
 
-.share.unfold ~ .deux{
+.share.unfold~.deux {
     top: 70px;
-    left:-17vw;
+    left: -17vw;
     display: block;
 
 }
-.share.unfold ~ .trois{
+
+.share.unfold~.trois {
     top: 123px;
-    left:-13.5vw;
+    left: -13.5vw;
     display: block;
 
 }
-.share.unfold ~ .quatre{
+
+.share.unfold~.quatre {
     top: 160px;
-    left:-9.5vw;
+    left: -9.5vw;
     display: block;
 
 }
-.share.unfold ~ .cinq{
+
+.share.unfold~.cinq {
     top: 160px;
-    left:-4vw; 
+    left: -4vw;
     display: block;
 
 }
-.share.unfold ~ .six{
+
+.share.unfold~.six {
     top: 128px;
     left: 0.2vw;
     display: block;
 
 }
-.share.unfold ~ .sept{
+
+.share.unfold~.sept {
     top: 70px;
-    left:4vw;
+    left: 4vw;
     display: block;
 
 }
-.share.unfold ~ .huit{
+
+.share.unfold~.huit {
     top: 1px;
     left: 5.5vw;
     display: block;
 
 }
 
-.share.fold ~ .un{
+.share.fold~.un {
     top: 1px;
     left: -6.5vw;
     display: block;
 
 }
 
-.share.fold ~ .deux{
+.share.fold~.deux {
     top: 1px;
     left: -6.5vw;
     display: block;
 }
 
-.share.fold ~ .trois{
-    top: 1px;
-    left: -6.5vw;
-    display: block;
-
-}
-
-.share.fold ~ .quatre{
+.share.fold~.trois {
     top: 1px;
     left: -6.5vw;
     display: block;
 
 }
 
-.share.fold ~ .cinq{
+.share.fold~.quatre {
     top: 1px;
     left: -6.5vw;
     display: block;
 
 }
 
- .share.fold ~ .six{
-    top: 1px;
-    left: -6.5vw;
-    display: block;
-
-} 
-
-.share.fold ~ .sept{
+.share.fold~.cinq {
     top: 1px;
     left: -6.5vw;
     display: block;
 
 }
-.share.fold ~ .huit{
+
+.share.fold~.six {
+    top: 1px;
+    left: -6.5vw;
+    display: block;
+
+}
+
+.share.fold~.sept {
+    top: 1px;
+    left: -6.5vw;
+    display: block;
+
+}
+
+.share.fold~.huit {
     top: 1px;
     left: -6.5vw;
     display: block;
@@ -655,7 +724,7 @@ body {
 
 }
 
-#couleurteh2{
+#couleurteh2 {
     cursor: none;
 }
 
@@ -665,17 +734,18 @@ body {
 
 }
 
-.btnEnzo{
+.btnEnzo {
     cursor: none;
 }
-.btnEnzo2{
+
+.btnEnzo2 {
     cursor: none;
 }
 
 
 /* //////////////////// ETOILES FILANTES ////////////////////// */
 
-.etoile{
+.etoile {
     position: absolute;
     top: 0;
     left: 10%;
@@ -684,57 +754,59 @@ body {
     animation: animateBg 50s linear infinite;
 }
 
-@keyframes animateBg{
-    0%
-    {
+@keyframes animateBg {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
     }
 }
 
-.filant{
+.filant {
     position: absolute;
     top: 30%;
     left: 70%;
     width: 4px;
-    height:4px;
+    height: 4px;
     background: white;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
-    0 0 0 8px rgba(255,255,255,0.1),
-    0 0 20px rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+        0 0 0 8px rgba(255, 255, 255, 0.1),
+        0 0 20px rgba(255, 255, 255, 0.1);
     animation: animate 3s linear infinite;
 }
 
-.filant::before{
-    content:'';
+.filant::before {
+    content: '';
     position: absolute;
     top: 101%;
     transform: translateY(-50%);
     width: 300px;
     height: 1px;
-    background: linear-gradient(90deg,#fff, transparent);
+    background: linear-gradient(90deg, #fff, transparent);
 }
 
 
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: rotate(315deg) translateX(0);
         opacity: 1;
     }
-    70%{
+
+    70% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         transform: rotate(315deg) translateX(-2000px);
         opacity: 0;
     }
 }
 
-.filant:nth-child(1){
+.filant:nth-child(1) {
     top: -4vw;
     right: 0;
     left: inherit;
@@ -744,7 +816,7 @@ body {
 }
 
 /* ( haut gauche) */
-.filant:nth-child(2){
+.filant:nth-child(2) {
     top: -4vw;
     right: 800px;
     left: initial;
@@ -753,8 +825,9 @@ body {
     z-index: -2;
 
 }
+
 /* ( bas droite ) */
-.filant:nth-child(3){
+.filant:nth-child(3) {
     top: 40vw;
     left: 19vw;
     animation-delay: 0.4s;
@@ -798,18 +871,19 @@ body {
 /* /////////////////////// MEDIA QUERIES  /////////////////////// */
 
 
-@media(max-width:1920px){
+@media(max-width:1920px) {
     .btnColor {
         font-size: 1.3rem;
         padding: 1rem 3rem;
         color: #f4f4f4;
         border-radius: 28px;
-      }
-      .share {
+    }
+
+    .share {
         display: block;
         width: 50px;
         height: 50px;
-    
+
         background-color: rgba(81, 10, 163, 0.945);
         position: absolute;
         top: 0.2vw;
@@ -819,157 +893,183 @@ body {
         overflow: hidden;
         line-height: 46px;
         font-size: 30px;
-        }
-        .global{
-            display: inline-block;
-            white-space:nowrap;
-            overflow: hidden;
-            font-size: 38px;
-            margin-left: 0px;
-            z-index: 999;
-            padding-left: 0px;
-            letter-spacing: .035em;
-        }
-        .couleurPrenom {
-            font-family: 'Orbitron', sans-serif;
-        
-            font-size: 25px;
+    }
 
-        }
-        .testMathis{
-            opacity: 0;
-        }
-        /* .container{
+    .global {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 38px;
+        margin-left: 0px;
+        z-index: 999;
+        padding-left: 0px;
+        letter-spacing: .035em;
+    }
+
+    .couleurPrenom {
+        font-family: 'Orbitron', sans-serif;
+
+        font-size: 25px;
+
+    }
+
+    .testMathis {
+        opacity: 0;
+    }
+
+    /* .container{
             padding-right: 2vw;
         } */
 }
 
 
-  @media(max-width:1500px){
-    #boutonPlus:checked ~ .un{
+@media(max-width:1500px) {
+    #boutonPlus:checked~.un {
         top: 1px;
         left: -19vw;
     }
-    #boutonPlus:checked ~ .deux{
+
+    #boutonPlus:checked~.deux {
         top: 70px;
-        left:-18vw;
+        left: -18vw;
     }
-    #boutonPlus:checked ~ .trois{
+
+    #boutonPlus:checked~.trois {
         top: 120px;
-        left:-15vw;
+        left: -15vw;
     }
-    #boutonPlus:checked ~ .quatre{
+
+    #boutonPlus:checked~.quatre {
         top: 150px;
-        left:-10.5vw;
+        left: -10.5vw;
     }
-    #boutonPlus:checked ~ .cinq{
+
+    #boutonPlus:checked~.cinq {
         top: 150px;
-        left:-4.75vw;
+        left: -4.75vw;
     }
-    #boutonPlus:checked ~ .six{
+
+    #boutonPlus:checked~.six {
         top: 115px;
         left: -1vw;
     }
-    #boutonPlus:checked ~ .sept{
+
+    #boutonPlus:checked~.sept {
         top: 70px;
-        left:2.3vw;
+        left: 2.3vw;
     }
-    #boutonPlus:checked ~ .huit{
+
+    #boutonPlus:checked~.huit {
         top: 1px;
         left: 3.3vw;
     }
-    @keyframes allezun{
-        from{
+
+    @keyframes allezun {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: -19vw;
             opacity: 1;
         }
     }
-    
-    @keyframes allezdeux{
-        from{
+
+    @keyframes allezdeux {
+        from {
             top: 0.2px;
             left: -7vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-18vw;
+            left: -18vw;
             opacity: 1;
         }
     }
-    @keyframes alleztrois{
-        from{
+
+    @keyframes alleztrois {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 120px;
-            left:-15vw;
+            left: -15vw;
             opacity: 1;
         }
     }
-    @keyframes allezquatre{
-        from{
+
+    @keyframes allezquatre {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-10.5vw;
+            left: -10.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezcinq{
-        from{
+
+    @keyframes allezcinq {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-4.75vw;
+            left: -4.75vw;
             opacity: 1;
         }
     }
-    @keyframes allezsix{
-        from{
+
+    @keyframes allezsix {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 115px;
             left: -1vw;
             opacity: 1;
         }
     }
-    @keyframes allezsept{
-        from{
+
+    @keyframes allezsept {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:2.3vw;
+            left: 2.3vw;
             opacity: 1;
         }
     }
-    @keyframes allezhuit{
-        from{
+
+    @keyframes allezhuit {
+        from {
             top: 0.2px;
             left: -6.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: 3.3vw;
             opacity: 1;
@@ -977,134 +1077,157 @@ body {
     }
 }
 
-@media(max-width:1250px){
-    .share{
+@media(max-width:1250px) {
+    .share {
         right: 10vw;
     }
-    #boutonPlus:checked ~ .un{
+
+    #boutonPlus:checked~.un {
         top: 1px;
         left: -27.5vw;
     }
-    #boutonPlus:checked ~ .deux{
+
+    #boutonPlus:checked~.deux {
         top: 70px;
-        left:-26vw;
+        left: -26vw;
     }
-    #boutonPlus:checked ~ .trois{
+
+    #boutonPlus:checked~.trois {
         top: 130px;
-        left:-22.5vw;
+        left: -22.5vw;
     }
-    #boutonPlus:checked ~ .quatre{
+
+    #boutonPlus:checked~.quatre {
         top: 150px;
-        left:-16.9vw;
+        left: -16.9vw;
     }
-    #boutonPlus:checked ~ .cinq{
+
+    #boutonPlus:checked~.cinq {
         top: 150px;
-        left:-11vw;
+        left: -11vw;
     }
-    #boutonPlus:checked ~ .six{
+
+    #boutonPlus:checked~.six {
         top: 120px;
         left: -4.5vw;
     }
-    #boutonPlus:checked ~ .sept{
+
+    #boutonPlus:checked~.sept {
         top: 70px;
-        left:-1.5vw;
+        left: -1.5vw;
     }
-    #boutonPlus:checked ~ .huit{
+
+    #boutonPlus:checked~.huit {
         top: 1px;
         left: 0.5vw;
     }
-    @keyframes allezun{
-        from{
+
+    @keyframes allezun {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: -27.5vw;
             opacity: 1;
         }
     }
-    
-    @keyframes allezdeux{
-        from{
+
+    @keyframes allezdeux {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-26vw;
+            left: -26vw;
             opacity: 1;
         }
     }
-    @keyframes alleztrois{
-        from{
+
+    @keyframes alleztrois {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 130px;
-            left:-22.5vw;
+            left: -22.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezquatre{
-        from{
+
+    @keyframes allezquatre {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-16.9vw;
+            left: -16.9vw;
             opacity: 1;
         }
     }
-    @keyframes allezcinq{
-        from{
+
+    @keyframes allezcinq {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-11vw;
+            left: -11vw;
             opacity: 1;
         }
     }
-    @keyframes allezsix{
-        from{
+
+    @keyframes allezsix {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 120px;
             left: -4.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezsept{
-        from{
+
+    @keyframes allezsept {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-1.5vw;
+            left: -1.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezhuit{
-        from{
+
+    @keyframes allezhuit {
+        from {
             top: 0.2px;
             left: -13vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: 0.5vw;
             opacity: 1;
@@ -1113,146 +1236,173 @@ body {
 }
 
 
-@media(max-width:990px){
-    .share{
+@media(max-width:990px) {
+    .share {
         right: 10vw;
     }
-    #boutonPlus:checked ~ .un{
+
+    #boutonPlus:checked~.un {
         top: 1px;
         left: -32vw;
     }
-    #boutonPlus:checked ~ .deux{
+
+    #boutonPlus:checked~.deux {
         top: 70px;
-        left:-30vw;
+        left: -30vw;
     }
-    #boutonPlus:checked ~ .trois{
+
+    #boutonPlus:checked~.trois {
         top: 130px;
-        left:-26vw;
+        left: -26vw;
     }
-    #boutonPlus:checked ~ .quatre{
+
+    #boutonPlus:checked~.quatre {
         top: 150px;
-        left:-20vw;
+        left: -20vw;
     }
-    #boutonPlus:checked ~ .cinq{
+
+    #boutonPlus:checked~.cinq {
         top: 150px;
-        left:-11.5vw;
+        left: -11.5vw;
     }
-    #boutonPlus:checked ~ .six{
+
+    #boutonPlus:checked~.six {
         top: 125px;
         left: -5.5vw;
     }
-    #boutonPlus:checked ~ .sept{
+
+    #boutonPlus:checked~.sept {
         top: 70px;
-        left:-1vw;
+        left: -1vw;
     }
-    #boutonPlus:checked ~ .huit{
+
+    #boutonPlus:checked~.huit {
         top: 1px;
         left: 1vw;
     }
-    .typeAuto{
-        letter-spacing: .20em;        
+
+    .typeAuto {
+        letter-spacing: .20em;
     }
-    .typeAuto2{
-        letter-spacing: .20em;        
+
+    .typeAuto2 {
+        letter-spacing: .20em;
     }
-    .texteAccueil{
+
+    .texteAccueil {
         font-size: 29px;
     }
-    .boutonStylax{
+
+    .boutonStylax {
         font-size: 1rem;
     }
-    @keyframes allezun{
-        from{
+
+    @keyframes allezun {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: -31vw;
             opacity: 1;
         }
     }
-    
-    @keyframes allezdeux{
-        from{
+
+    @keyframes allezdeux {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-30vw;
+            left: -30vw;
             opacity: 1;
         }
     }
-    @keyframes alleztrois{
-        from{
+
+    @keyframes alleztrois {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 130px;
-            left:-26vw;
+            left: -26vw;
             opacity: 1;
         }
     }
-    @keyframes allezquatre{
-        from{
+
+    @keyframes allezquatre {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-20vw;
+            left: -20vw;
             opacity: 1;
         }
     }
-    @keyframes allezcinq{
-        from{
+
+    @keyframes allezcinq {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 150px;
-            left:-11.5vw;
+            left: -11.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezsix{
-        from{
+
+    @keyframes allezsix {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 125px;
             left: -5.5vw;
             opacity: 1;
         }
     }
-    @keyframes allezsept{
-        from{
+
+    @keyframes allezsept {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-1vw;
+            left: -1vw;
             opacity: 1;
         }
     }
-    @keyframes allezhuit{
-        from{
+
+    @keyframes allezhuit {
+        from {
             top: 0.2px;
             left: -14vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 1px;
             left: 1vw;
             opacity: 1;
@@ -1260,312 +1410,467 @@ body {
     }
 }
 
+@media(max-width:810px) {
+    .global {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 35px;
+    }
+}
 
-@media(max-width:765px){
-    .share{
+@media(max-width:765px) {
+    .share {
         left: 0.2vw;
     }
-    #boutonPlus:checked ~ .un{
+
+    #boutonPlus:checked~.un {
         top: 70px;
         left: -70vw;
     }
-    #boutonPlus:checked ~ .deux{
+
+    #boutonPlus:checked~.deux {
         top: 70px;
-        left:-60vw;
+        left: -60vw;
     }
-    #boutonPlus:checked ~ .trois{
+
+    #boutonPlus:checked~.trois {
         top: 70px;
-        left:-50vw;
+        left: -50vw;
     }
-    #boutonPlus:checked ~ .quatre{
+
+    #boutonPlus:checked~.quatre {
         top: 70px;
-        left:-40vw;
+        left: -40vw;
     }
-    #boutonPlus:checked ~ .cinq{
+
+    #boutonPlus:checked~.cinq {
         top: 70px;
         left: -30vw;
     }
-    #boutonPlus:checked ~ .six{
+
+    #boutonPlus:checked~.six {
         top: 70px;
         left: -20vw;
     }
-    #boutonPlus:checked ~ .sept{
+
+    #boutonPlus:checked~.sept {
         top: 70px;
         left: -10vw;
     }
-    #boutonPlus:checked ~ .huit{
+
+    #boutonPlus:checked~.huit {
         top: 70px;
         left: 0vw;
     }
-    .typeAuto{
-        letter-spacing: .10em;        
-    }
-    .typeAuto2{
+
+    .typeAuto {
         letter-spacing: .10em;
     }
-    .texteAccueil{
+
+    .typeAuto2 {
+        letter-spacing: .10em;
+    }
+
+    .texteAccueil {
         font-size: 23.5px;
     }
-    .boutonStylax{
+
+    .boutonStylax {
         font-size: 1rem;
     }
-    @keyframes allezun{
-        from{
+
+    @keyframes allezun {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -70vw;
             opacity: 1;
         }
     }
-    
-    @keyframes allezdeux{
-        from{
+
+    @keyframes allezdeux {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-60vw;
+            left: -60vw;
             opacity: 1;
         }
     }
-    @keyframes alleztrois{
-        from{
+
+    @keyframes alleztrois {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-50vw;
+            left: -50vw;
             opacity: 1;
         }
     }
-    @keyframes allezquatre{
-        from{
+
+    @keyframes allezquatre {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-40vw;
+            left: -40vw;
             opacity: 1;
         }
     }
-    @keyframes allezcinq{
-        from{
+
+    @keyframes allezcinq {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -30vw;
             opacity: 1;
         }
     }
-    @keyframes allezsix{
-        from{
+
+    @keyframes allezsix {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -20vw;
             opacity: 1;
         }
     }
-    @keyframes allezsept{
-        from{
+
+    @keyframes allezsept {
+        from {
             top: 0.2px;
             left: -2vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -10vw;
             opacity: 1;
         }
     }
-    @keyframes allezhuit{
-        from{
+
+    @keyframes allezhuit {
+        from {
             top: 0.2px;
             left: -2vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: 0vw;
             opacity: 1;
         }
     }
-    .global{
-        font-size: 34px;
-        margin-left: 7vw;
+
+    .global {
+        font-size: 29px;
+        margin-left: 0.5vw;
+        letter-spacing: 0.075em;
     }
-    .unDiv{
-        width: 22%;
-        margin-right: -6vw;
+
+    .unDiv {
+        /* width: 22%;  */
+        padding-right: 5vw;
+        margin-left: 5vw;
 
     }
+
+    .testMathis {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:710px) {
+    .global {
+        font-size: 27px;
+        margin-left: 0.5vw;
+        letter-spacing: 0.075em;
+    }
+
+    .unDiv {
+        /* width: 22%;  */
+        padding-right: 7vw;
+        margin-left: 5vw;
+
+    }
+
+    .testMathis {
+        display: none;
+    }
+
+}
+
+@media(max-width:675px) {
+    .global {
+        font-size: 25px;
+        margin-left: 0.5vw;
+        letter-spacing: 0.075em;
+    }
+
+    .unDiv {
+        /* width: 22%;  */
+        padding-right: 8.5vw;
+        margin-left: 5vw;
+
+    }
+
+    .testMathis {
+        display: none;
+    }
+
+    .btnMilieu {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:615px) {
+    .global {
+        font-size: 22px;
+        margin-left: 0.5vw;
+        letter-spacing: 0.075em;
+    }
+
+    .unDiv {
+        /* width: 22%;  */
+        padding-right: 9vw;
+        margin-left: 8vw;
+
+    }
+
+    .testMathis {
+        display: none;
+    }
+
+    .btnMilieu {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:575px) {
+    .global {
+        font-size: 18px;
+        /* margin-right: 7vw; */
+        padding-left: 1.25vw;
+        letter-spacing: 0.08em;
+    }
+    .unDiv {
+        /* width: 22%;  */
+        /* padding-right: 7vw; */
+        /* margin-left: 6vw; */
+
+    }
+    .couleurPrenom {
+        font-family: 'Orbitron', sans-serif;
     
-}
-
-@media(max-width:680px){
-    .unDiv{
-        margin-right: -5.5vw;
+        font-size: 24px;
     }
-}
-
-@media(max-width:575px){
-    .share{
-        left: -3.5vw;
+    .btnMilieu {
+        font-size: 0.65rem;
     }
-    #boutonPlus:checked ~ .un{
+
+    .share {
+        left: -7.5vw;
+        width: 40px;
+        height: 40px;
+        line-height: 34px;
+        font-size: 25px;
+    }
+
+    #boutonPlus:checked~.un {
         top: 70px;
         left: -90vw;
     }
-    #boutonPlus:checked ~ .deux{
+
+    #boutonPlus:checked~.deux {
         top: 70px;
-        left:-78vw;
+        left: -78vw;
     }
-    #boutonPlus:checked ~ .trois{
+
+    #boutonPlus:checked~.trois {
         top: 70px;
-        left:-66vw;
+        left: -66vw;
     }
-    #boutonPlus:checked ~ .quatre{
+
+    #boutonPlus:checked~.quatre {
         top: 70px;
-        left:-54vw;
+        left: -54vw;
     }
-    #boutonPlus:checked ~ .cinq{
+
+    #boutonPlus:checked~.cinq {
         top: 70px;
         left: -42vw;
     }
-    #boutonPlus:checked ~ .six{
+
+    #boutonPlus:checked~.six {
         top: 70px;
         left: -30vw;
     }
-    #boutonPlus:checked ~ .sept{
+
+    #boutonPlus:checked~.sept {
         top: 70px;
         left: -18vw;
     }
-    #boutonPlus:checked ~ .huit{
+
+    #boutonPlus:checked~.huit {
         top: 70px;
         left: -6vw;
     }
-    .typeAuto{
-        letter-spacing: .05em;        
-    }
-    .typeAuto2{
+
+    .typeAuto {
         letter-spacing: .05em;
     }
-    .texteAccueil{
+
+    .typeAuto2 {
+        letter-spacing: .05em;
+    }
+
+    .texteAccueil {
         font-size: 22px;
     }
-    .boutonStylax{
+
+    .boutonStylax {
         font-size: 1rem;
     }
 
-    @keyframes allezun{
-        from{
+    @keyframes allezun {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -90vw;
             display: block;
             opacity: 1;
         }
     }
-    
-    @keyframes allezdeux{
-        from{
+
+    @keyframes allezdeux {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-78vw;
+            left: -78vw;
             opacity: 1;
         }
     }
-    @keyframes alleztrois{
-        from{
+
+    @keyframes alleztrois {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-66vw;
+            left: -66vw;
             opacity: 1;
         }
     }
-    @keyframes allezquatre{
-        from{
+
+    @keyframes allezquatre {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
-            left:-54vw;
+            left: -54vw;
             opacity: 1;
         }
     }
-    @keyframes allezcinq{
-        from{
+
+    @keyframes allezcinq {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -42vw;
             opacity: 1;
         }
     }
-    @keyframes allezsix{
-        from{
+
+    @keyframes allezsix {
+        from {
             top: 0.2px;
             left: -0.5vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -30vw;
             opacity: 1;
         }
     }
-    @keyframes allezsept{
-        from{
+
+    @keyframes allezsept {
+        from {
             top: 0.2px;
             left: -2vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -18vw;
             opacity: 1;
         }
     }
-    @keyframes allezhuit{
-        from{
+
+    @keyframes allezhuit {
+        from {
             top: 0.2px;
             left: -2vw;
             opacity: 0;
         }
-        to{
+
+        to {
             top: 70px;
             left: -6vw;
             opacity: 1;
