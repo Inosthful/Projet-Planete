@@ -1,5 +1,6 @@
 .bouton{
-    border-color: #480a64;
+    border-width: 0.8px;
+    border-color: rgb(4, 4, 66);
     width: 56px;
     background-color: #000000;
     padding-top: 2px;
