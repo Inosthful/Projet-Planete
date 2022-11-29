@@ -36,6 +36,9 @@ function redirectTerre(){
     window.open('https://fr.wikipedia.org/wiki/Terre');
 }
 
+function redirectSoleil(){
+    window.open('https://fr.wikipedia.org/wiki/Soleil')
+}
 
 function redirectMercure(){ 
     window.open('https://fr.wikipedia.org/wiki/Mercure');
@@ -68,5 +71,5 @@ function redirectNeptune(){
 }
 
 function redirectAccueil(){ 
-    window.open('index.html');
+    window.location = ('index.html');
 }

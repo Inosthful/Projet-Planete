@@ -145,14 +145,13 @@ body {
     display: inline-block;
     white-space:nowrap;
     overflow: hidden;
-    font-size: 42px;
+    font-size: 40px;
     color: #ffffff;
     font-weight:10;
     font-family: 'Orbitron', sans-serif;
     height:8vh;
-    margin-left: 15px;
     z-index: 999;
-    padding-left: 5px;
+
 
   }
   
@@ -209,6 +208,7 @@ body {
     justify-content: center;
     /* height: 6vh; */
     z-index: 999;
+    padding-left: 1.5vw;
   }
   
   .btnColor {
@@ -256,11 +256,11 @@ body {
     left: 100%;
   }
 
+  .testMathis{
+    opacity: 0;
+}
+
 /* //////////////////////////////// BOUTON "+"  ////////////////////////////////////// */
-
-
-
-
 .share {
     display: block;
     width: 60px;
@@ -655,6 +655,7 @@ body {
     font-size: 16px;
     transition: all 0.6s ease-in-out;
     background-color: #b94fff50;
+    margin-bottom: 6px;
 
 }
 
@@ -800,6 +801,52 @@ body {
 
 /* /////////////////////// MEDIA QUERIES  /////////////////////// */
 
+
+@media(max-width:1920px){
+    .btnColor {
+        font-size: 1.3rem;
+        padding: 1rem 3rem;
+        color: #f4f4f4;
+        border-radius: 28px;
+      }
+      .share {
+        display: block;
+        width: 50px;
+        height: 50px;
+    
+        background-color: rgba(81, 10, 163, 0.945);
+        position: absolute;
+        top: 0.2vw;
+        right: 4vw;
+        z-index: 999;
+        text-align: center;
+        overflow: hidden;
+        line-height: 46px;
+        font-size: 30px;
+        }
+        .global{
+            display: inline-block;
+            white-space:nowrap;
+            overflow: hidden;
+            font-size: 38px;
+            margin-left: 0px;
+            z-index: 999;
+            padding-left: 0px;
+            letter-spacing: .035em;
+        }
+        .couleurPrenom {
+            font-family: 'Orbitron', sans-serif;
+        
+            font-size: 25px;
+
+        }
+        .testMathis{
+            opacity: 0;
+        }
+        /* .container{
+            padding-right: 2vw;
+        } */
+}
 
 
   @media(max-width:1500px){
