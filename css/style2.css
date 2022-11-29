@@ -12,29 +12,20 @@ body {
     height: 100vh;
     position: relative;
     cursor: none;
-    /* cursor: url(../Images/cursor.png), default; */
     overflow: hidden;
 }
-/* Couleur ( blue bg d'apres mathis donc a test ) 
-text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir aussi*/
+
 /* //////////////////////////// Header /////////////////////////////////// */
 .couleurPrenom {
     font-family: 'Orbitron', sans-serif;
 
     font-size: 35px;
     text-shadow: 0px 1px 1px rgb(0, 0, 0);
-    /* display: flex;
-    justify-content: center; */
     overflow: hidden;
 
     color: rgba(81, 10, 163, 0.945);
-    /* bordrgb(166, 138, 185)t: .10em solid rgb(113, 5, 146);  The typwriter cursor  */
     white-space: nowrap;
-    /* Keeps the content on a single line */
-    /* margin: 0 auto; */
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em;
-    /* Adjust as needed */
     
     animation: typing 3s steps(100, end), 
         blink-caret 0.75s step-end infinite;    
@@ -154,15 +145,9 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     display: flex;
     justify-content: center;
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    /* border-right: .10em solid rgb(113, 5, 146);  The typwriter cursor  */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
-    /* Adjust as needed */
     animation: typing 3s steps(100, end),
         blink-caret 0.75s step-end infinite;
 }
@@ -177,24 +162,13 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     }
 }
 
-/* 
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(104, 0, 165); }
-} */
 
 .typeAuto2 {
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: .10em solid rgb(113, 5, 146);
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .20em;
-    /* Adjust as needed */
     animation: typingg 3s steps(150, end),
         blink-carett 0.75s step-end infinite,
         typingg2 3s steps(150, end)
@@ -238,47 +212,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 
 /* ////////////////////////////////// BOUTON STYLAX MILIEU /////////////////////////////////////// */
-
-
-/* .boutonStylax {
-    padding: 20px 70px;
-    font-size: 1.5rem;
-    cursor: none;
-    border: 0px;
-    background: transparent;
-    position: relative;
-    transition: all .2s;
-    overflow: hidden;
-    color: rgb(248, 248, 248);
-    border-radius: 30px;
-    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
-    margin-top: 20px;
-    z-index: 998;
-    
-}
-
-.boutonStylax::after {
-    content: '';
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: -50px;
-    left: -100px;
-    background-image: linear-gradient(225deg, #c625d0 0%, #26caf8 50%, #27d86c  100%);
-    z-index: -1;
-    transition: all .5s;
-}
-
-.boutonStylax:hover::after {
-    transform: rotate(150deg);
-}
-
-.boutonStylax:hover {
-    transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
-} */
-
-
 
 .container {
     margin: auto;
@@ -603,30 +536,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     }
 }
 
-/* @keyframes huitteh{
-    from{
-        display: block
-    }
-    to{
-        display: none;
-    }
-} */
-/* label.bouton:{
-    display: block;
-} */
-
-/* selecteur et peut etre que ca marche ( animation retour */
-/* #boutonPlus:checked ~ .un{
-    top: 15vw;
-    left: 10vw;
-    animation: allezlefoot 7.5s;
-} */
-
-
-/* .unfold{
-    
-} */
-
 .share.unfold ~ .un{
     top: 1px;
     left: -18.5vw;
@@ -730,44 +639,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
 }
 
-/* .share ~ .un{
-    top: inherit;
-    left: inherit;
-    display: inherit;
-} */
-/* selectionner le css  */
-/* le sosu garder dans une valeur  */
-/* trouve la regle que tu veux modifier ( class ) */
-/* style.set property */
-
-/* 
-@keyframes allez1{
-    from{
-        top: 1px;
-        left: -18.5vw;
-    }
-    to{
-        top: 0.2px;
-        left: -6.5vw;
-    }
-}
-@keyframes allez2{
-    from{
-        top: 1px;
-        left: -18.5vw;
-    }
-    to{
-        top: 0.2px;
-        left: -6.5vw;
-    }
-} */
-
-
-
-
-
-
-
 
 /* //////////////////////// FOOTER ///////////////////////// */
 
@@ -785,8 +656,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
 
     color: rgb(199, 48, 236);
     transition: all 0.25s ease-in-out;
-    /* color: #d6249f;
-    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
 }
 
 .btn {
@@ -861,7 +730,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     width: 300px;
     height: 1px;
     background: linear-gradient(90deg,#fff, transparent);
-    /* left: 30px; */
 }
 
 
@@ -1045,58 +913,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
         top: 1px;
         left: 3.3vw;
     }
-    /* .share.fold ~ .un{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    }   
-    .share.fold ~ .deux{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    }
-    
-    .share.fold ~ .trois{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .quatre{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .cinq{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    }
-    
-     .share.fold ~ .six{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    } 
-    
-    .share.fold ~ .sept{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    }
-    .share.fold ~ .huit{
-        top: 1px;
-        left: -7.5vw;
-        display: block;
-    
-    } */
     @keyframes allezun{
         from{
             top: 0.2px;
@@ -1329,15 +1145,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
             opacity: 1;
         }
     }
-    
-    /* @keyframes huitteh{
-        from{
-            display: block
-        }
-        to{
-            display: none;
-        }
-    } */
 }
 
 
@@ -1389,59 +1196,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     .boutonStylax{
         font-size: 1rem;
     }
-    /* .share.fold ~ .un{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .deux{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    }
-    
-    .share.fold ~ .trois{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .quatre{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .cinq{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    }
-    
-     .share.fold ~ .six{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    } 
-    
-    .share.fold ~ .sept{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    }
-    .share.fold ~ .huit{
-        top: 1px;
-        left: -15vw;
-        display: block;
-    
-    } */
     @keyframes allezun{
         from{
             top: 0.2px;
@@ -1590,59 +1344,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     .boutonStylax{
         font-size: 1rem;
     }
-    /* .share.fold ~ .un{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .deux{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    }
-    
-    .share.fold ~ .trois{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .quatre{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    }
-    
-    .share.fold ~ .cinq{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    }
-    
-     .share.fold ~ .six{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    } 
-    
-    .share.fold ~ .sept{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    }
-    .share.fold ~ .huit{
-        top: 1px;
-        left: -0.1vw;
-        display: block;
-    
-    } */
     @keyframes allezun{
         from{
             top: 0.2px;
@@ -1747,7 +1448,7 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     .unDiv{
         width: 22%;
         margin-right: -6vw;
-        /* margin-left: 8vw; */
+
     }
     
 }
@@ -1762,9 +1463,6 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
     .share{
         left: -3.5vw;
     }
-    /* .texteAccueil{
-        font-size: 18px !important;
-    } */
     #boutonPlus:checked ~ .un{
         top: 70px;
         left: -90vw;
@@ -1908,14 +1606,4 @@ text auto, faire les deux pareil parce que c'est pas tres beau apparement, voir 
             opacity: 1;
         }
     }
-    /* .global{
-        font-size: 25px;
-        margin-left: 4vw;
-    }
-    .unDiv{
-        width: 22%;
-        margin-right: -2vw;
-
-    } */   /* A faire le media query pour tel parce que ca bug de zinzin sur pc de chez moi
-    imo il faut aussi reduire le bouton en format telephone */
 }

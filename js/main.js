@@ -1,10 +1,3 @@
-// let btn = document.getElementsByClassName('bouton')
-// console.log(btn);
-
-// let terre = document.getElementsByClassName('terre');
-// terre.addEventListener(click,()=>{
-//     location.href = "http://www.cnn.com";
-// })
 
 // let test1 = ["animationBouton", "animationBouton2"]
 
