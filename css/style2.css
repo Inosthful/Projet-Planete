@@ -1239,6 +1239,8 @@ body {
 @media(max-width:990px) {
     .share {
         right: 10vw;
+        width: 400px;
+        height: 400px;
     }
 
     #boutonPlus:checked~.un {
@@ -1652,10 +1654,6 @@ body {
 
     .btnMilieu {
         font-size: 0.8rem;
-    }
-    .share{
-        width: 400px;
-        height: 400px;
     }
 }
 
