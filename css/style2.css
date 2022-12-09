@@ -1680,13 +1680,14 @@ body {
 
 @media(max-width:575px) {
     .global {
-        font-size: 18px;
-   
+        font-size: 15px;
+        margin-left: 2vw;
         letter-spacing: 0.11em;
     }
     .unDiv.global{
-        padding-right: 12vw; 
-        margin-left: 5vw;
+        padding-left: 3vw;
+
+
 
     }
     .cursor {
