@@ -77,7 +77,7 @@ animation.addEventListener("click", function () {
     else {
         animation.classList.add("unfold")
         for (i = 0; i < 8; i++) {
-
+            
             let un = [...stylesheet.cssRules].find((r) => r.selectorText == `.share.unfold ~ ${test[i]}`)
             // console.log(stylesheet.cssRules[un])
             un.style.setProperty("animation", `${test2[i]} 1s`)
