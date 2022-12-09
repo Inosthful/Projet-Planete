@@ -1681,13 +1681,13 @@ body {
 @media(max-width:575px) {
     .global {
         font-size: 18px;
-        /* margin-right: 7vw; */
-        padding-left: 0.1vw;
+   
         letter-spacing: 0.11em;
     }
     .unDiv.global{
-        padding-right: 5vw;
-        padding-left: 7vw;
+        padding-right: 12vw; 
+        margin-left: 5vw;
+
     }
     .cursor {
         width: 50px;
