@@ -68,7 +68,7 @@ body {
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
     transition-timing-function: ease-out;
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
@@ -1684,6 +1684,20 @@ body {
         /* margin-right: 7vw; */
         padding-left: 1.25vw;
         letter-spacing: 0.08em;
+    }
+    .cursor {
+        display: none;
+    
+    
+    }
+    
+    .cursor::after {
+        display: none;
+    }
+    
+    .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid rgb(103, 18, 172);
     }
     .unDiv {
         /* width: 22%;  */
