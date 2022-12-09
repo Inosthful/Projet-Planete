@@ -1909,36 +1909,30 @@ body {
         }
     }
     .etoile {
-        position: absolute;
-        top: 0;
-        left: 10%;
-        width: 100%;
-        height: 100vh;
-        animation: animateBg 50s linear infinite;
-        display:none;
+        display:none !important;
     }
     
     .filant {
-        display: none;
+        display: none !important;
         
     }
     
     .filant::before {
-        display: none;
+        display: none !important;
     }
     
     .filant:nth-child(1) {
-        display: none;
+        display: none !important;
     }
     
     /* ( haut gauche) */
     .filant:nth-child(2) {
-        display: none;
+        display: none !important;
     
     }
     
     /* ( bas droite ) */
     .filant:nth-child(3) {
-        display: none;
+        display: none !important;
     }
 }
