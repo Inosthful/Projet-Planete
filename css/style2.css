@@ -1240,7 +1240,17 @@ body {
     .share {
         right: 10vw;
     }
+    .global {
+        font-size: 12px;
+        margin-left: 2vw;
+        letter-spacing: 0.11em;
+    }
+    .unDiv.global{
+        padding-left: 3vw;
 
+
+
+    }
     #boutonPlus:checked~.un {
         top: 1px;
         left: -32vw;
@@ -1680,7 +1690,7 @@ body {
 
 @media(max-width:575px) {
     .global {
-        font-size: 15px;
+        font-size: 18px;
         margin-left: 2vw;
         letter-spacing: 0.11em;
     }
