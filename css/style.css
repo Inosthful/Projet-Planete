@@ -19,7 +19,7 @@ rediriger au lieu d'un vieux  truc qui tourne et qui grossit */
   border: 1px solid white;
   border-radius: 50%;
   position: absolute;
-  transition-duration: 1ms;
+  transition-duration: 0ms;
   transition-timing-function: ease-out;
   animation: cursorAnim 1s infinite alternate;
   pointer-events: none;
