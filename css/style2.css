@@ -1682,7 +1682,7 @@ body {
     .global {
         font-size: 18px;
         /* margin-right: 7vw; */
-        padding-left: 2vw;
+        padding-left: 0vw;
         letter-spacing: 0.11em;
     }
     .unDiv.global{
