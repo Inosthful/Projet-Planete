@@ -310,11 +310,13 @@ a {
   bottom: 42vw;
   left: 13vw;
   transition: all 1.5s ease-in-out;
-  transform: rotate(290deg);
+
   z-index: 998;
 }
 
 .terre:hover {
+
+  transform: rotate(0deg);
   transform: scale(1.35);
 }
 
