@@ -1682,14 +1682,11 @@ body {
     .global {
         font-size: 18px;
         /* margin-right: 7vw; */
-        padding-left: 1.25vw;
-        letter-spacing: 0.08em;
+        padding-left: 2vw;
+        letter-spacing: 0.11em;
     }
     .unDiv.global{
-        padding-right: 12vw
-    }
-    .global{
-        padding-left: 2vw;
+        padding-right: 12vw;
     }
     .cursor {
         width: 50px;
