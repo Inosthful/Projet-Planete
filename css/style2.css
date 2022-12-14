@@ -348,8 +348,8 @@ body {
     text-align: center;
     line-height: 49px;
     font-size: 1.5em;
-    top: 0.2vw;
-    right: 5.3vw;
+    top: 0.3vw;
+    right: 5.1vw;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, .2);
@@ -393,35 +393,35 @@ body {
 
 
 .un {
-    opacity: 0;
+    display: none;
 }
 
 .deux {
-    opacity: 0;
+    display: none;
 }
 
 .trois {
-    opacity: 0;
+    display: none;
 }
 
 .quatre {
-    opacity: 0;
+    display: none;
 }
 
 .cinq {
-    opacity: 0;
+    display: none;
 }
 
 .six {
-    opacity: 0;
+    display: none;
 }
 
 .sept {
-    opacity: 0;
+    display: none;
 }
 
 .huit {
-    opacity: 0;
+    display: none;
 }
 
 .mercure {
