@@ -5,10 +5,10 @@
 
 /* -------------------------------------------------------------------------- */
 body {
-    background-image: url(../Images/fondetoile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    /* background-image: url(../Images/fondetoile.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
     height: 100vh;
     position: relative;
     cursor: none;
@@ -700,6 +700,7 @@ body {
     /* margin-right: 10px; */
     color: rgb(199, 48, 236);
     transition: all 0.25s ease-in-out;
+    z-index: 2;
 }
 
 /* .couleurStates:hover{
@@ -721,7 +722,12 @@ body {
     transition: all 0.6s ease-in-out;
     background-color: #b94fff50;
     margin-bottom: 6px;
+    z-index: 1;
 
+}
+
+.zindex{
+    z-index: 1;
 }
 
 #couleurteh2 {
@@ -736,6 +742,7 @@ body {
 
 .btnEnzo {
     cursor: none;
+    
 }
 
 .btnEnzo2 {
@@ -751,7 +758,7 @@ body {
     left: 10%;
     width: 100%;
     height: 100vh;
-    animation: animateBg 50s linear infinite;
+    animation: animateBg 50s linear paused ;
 }
 
 @keyframes animateBg {
@@ -810,8 +817,8 @@ body {
     top: -4vw;
     right: 0;
     left: inherit;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-duration: 4s;
     z-index: -2;
 }
 
@@ -820,8 +827,8 @@ body {
     top: -4vw;
     right: 800px;
     left: initial;
-    animation-delay: 0.7s;
-    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-duration: 3s;
     z-index: -2;
 
 }
@@ -830,8 +837,8 @@ body {
 .filant:nth-child(3) {
     top: 40vw;
     left: 19vw;
-    animation-delay: 0.4s;
-    animation-duration: 3.5s;
+    animation-delay: 1.2s;
+    animation-duration: 7s;
     z-index: -2;
 }
 
@@ -1679,12 +1686,13 @@ body {
 
 @media(max-width:575px) {
     .global {
-        font-size: 18px;
-        margin-left: 2vw;
-        letter-spacing: 0.11em;
+        font-size: 17px;
+        margin-left: -15vw;
+        padding-left: 17vw;
+        letter-spacing: 0.13em;
     }
     .unDiv.global{
-        padding-left: 3vw;
+        padding-left: 23vw;
 
 
 
@@ -1934,3 +1942,4 @@ body {
         display: none !important;
     }
 }
+/* ---- reset ---- */ canvas{z-index: -1; display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #191e43; background-image: url("/Images/fondetoile.jpg"); background-repeat: no-repeat; background-position: 0% 50%; background-size: cover; } /* ---- stats.js ---- */
