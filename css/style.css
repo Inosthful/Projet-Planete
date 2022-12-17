@@ -726,3 +726,9 @@ span:nth-child(1){
   z-index: -2;
 }
 
+
+/* ////////////////////////////// */
+
+/* ---- reset ---- */ canvas{z-index: 999; display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #191e43; background-image: url(../Images/fondetoile.jpg);
+  background-repeat: no-repeat; background-position: 0% 50%; background-size: cover; } /* ---- stats.js ---- */
+
