@@ -14,7 +14,10 @@
 
 // })
 
-// CURSEUR MOUVEMENT 
+
+// CURSEUR MOUVEMENT
+
+
 
 const cursor = document.querySelector('.cursor');
 
