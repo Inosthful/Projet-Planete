@@ -1,5 +1,5 @@
 
-// FOOTER ANIMATION 
+///// FOOTER ANIMATION 
 $(document).ready(function () {
     $("#btnEnzo").mouseover(function () {
         $("#couleurteh").css("transform", "scale(1.1)");
