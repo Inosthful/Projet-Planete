@@ -20,14 +20,14 @@ $(document).ready(function () {
 
 // BOUTON + ANIMATION 
 let test = [".un", ".deux", ".trois", ".quatre", ".cinq", ".six", ".sept", ".huit"]
-console.log(`${test}`)
+
 let test2 = ["allezun", "allezdeux", "alleztrois", "allezquatre", "allezcinq", "allezsix", "allezsept", "allezhuit"]
 // let test3 = "opun"
 // , "opdeux","optrois","opquatre","opcinq","opsix","opsept","ophuit"
 // FOLD UNFOLD CLASS, verifie quand t'appuie sur un bouton. Créer les class fold et unfold suivant si t'a appuyer pour "ouvrir" le bouton ou si t'appuie pour le "fermer"
 let stylesheet = document.styleSheets[1]
 let animation = document.getElementById("share")
-console.log(animation)
+
 
 animation.addEventListener("click", function () {
     if (animation.classList.contains("unfold")) {
